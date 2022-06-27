@@ -450,6 +450,9 @@ footer {
     height: 120px;
 }  
 
+#nuestrosClientes img:hover{
+    transform: scale(2,2);
+}  
 
 #preguntasFrecuentes h3{
     text-align: center;
@@ -527,6 +530,10 @@ footer {
 
 #chapitas p{
     text-align: center;
+}
+
+.chapitasPet input {
+    width: 50%;
 }
 
 /*-------------------- CONTACTO HTML-------------------*/
@@ -1043,6 +1050,9 @@ margin-top: 1rem;
     height: 180px;
 }  
 
+#nuestrosClientes img:hover{
+    transform: scale(2,2);
+} 
 
 
     /* ----------- Modificiones PET SHOP 769-1024 ------------- */
@@ -1055,7 +1065,7 @@ margin-top: 1rem;
 
 
 #seccionPetshop img{
-    width: 40rem;
+    width: 35rem;
     height: 400px;
     margin-right: 0.4rem;
 }   
@@ -1326,9 +1336,10 @@ button{
         margin-top: -1px;
     } 
     
-    .logo {
+    .logo{
         width: 100px;
         height: 100px;
+   
     }
     
     #seccionNosotrasServicios{
@@ -1337,6 +1348,7 @@ button{
 
     .cajaPrincipalServicios {
         display: flex;
+        align-items: center;
     }
 
     #seccionPrincipalServicios h3 {
@@ -1348,7 +1360,7 @@ button{
     .unionCajasServicios img {
         width: 15vw;
         height: 20vh;
-        margin-left: 150px;
+        align-items: center;
     
     } 
     
@@ -1407,6 +1419,11 @@ button{
         width: 16vw;
         height: 15vw;
     }  
+
+    #nuestrosClientes img:hover{
+        transform: scale(2,2);
+    } 
+     
 
     #preguntasFrecuentes .seccionPreguntas{
         display: flex;
