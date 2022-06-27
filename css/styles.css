@@ -12,6 +12,7 @@
 header {
     height: 140px;
     padding: 8px;
+    z-index: 2;
 }    
 
 body{
@@ -115,6 +116,7 @@ h2{
     font-weight: 1000;
     background-color: rgb(67, 68, 68);
     text-align: center;
+    z-index: -2;
     }   
 
 
@@ -211,9 +213,8 @@ table {
     padding-top: 1.5rem;
     background-color: rgb(63, 161, 145);
     border:solid rgb(184,184,184);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+
 } 
 
 #seccionBlog h2 {
@@ -451,6 +452,9 @@ footer {
     height: 120px;
 }  
 
+#nuestrosClientes img:hover{
+    transform: scale(2,2);
+}  
 
 #preguntasFrecuentes h3{
     text-align: center;
@@ -529,6 +533,10 @@ footer {
 
 #chapitas p{
     text-align: center;
+}
+
+.chapitasPet input {
+    width: 50%;
 }
 
 /*-------------------- CONTACTO HTML-------------------*/
@@ -1045,6 +1053,9 @@ margin-top: 1rem;
     height: 180px;
 }  
 
+#nuestrosClientes img:hover{
+    transform: scale(2,2);
+} 
 
 
     /* ----------- Modificiones PET SHOP 769-1024 ------------- */
@@ -1057,7 +1068,7 @@ margin-top: 1rem;
 
 
 #seccionPetshop img{
-    width: 40rem;
+    width: 35rem;
     height: 400px;
     margin-right: 0.4rem;
 }   
@@ -1328,17 +1339,23 @@ button{
         margin-top: -1px;
     } 
     
-    .logo {
+    .logo{
         width: 100px;
         height: 100px;
+        transition: height 2s, width 1s;
     }
-    
+
+    .logo:hover {
+        height: 200px; width: 200px;
+    }
+
     #seccionNosotrasServicios{
         padding-left: 1rem;
     }
 
     .cajaPrincipalServicios {
         display: flex;
+        align-items: center;
     }
 
     #seccionPrincipalServicios h3 {
@@ -1350,7 +1367,7 @@ button{
     .unionCajasServicios img {
         width: 15vw;
         height: 20vh;
-        margin-left: 150px;
+        align-items: center;
     
     } 
     
@@ -1409,6 +1426,10 @@ button{
         width: 16vw;
         height: 15vw;
     }  
+
+    #nuestrosClientes img:hover{
+        transform: scale(2,2);
+    } 
 
     #preguntasFrecuentes .seccionPreguntas{
         display: flex;

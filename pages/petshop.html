@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- link animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Logo2.jpg">
     <link rel="stylesheet" href="../css/styles.css">
@@ -15,7 +19,7 @@
 <!-- Header-->
 <header class="navBackgroundSecciones">
     <!-- logo -->
-    <a href="../index.html"><img width="70" height="70" src="../img/Logo2.jpg" class="logo"></a>
+    <a href="../index.html"><img width="70" height="70" src="../img/Logo2.jpg" class="logo" data-aos="fade-right"></a>
     <h1>VETERINARIA HOCICOS</h1>
     <h2>Pet shop</h2>
     <nav>
@@ -35,7 +39,9 @@
 
         <section id="seccionPetshop">
             <div>
-            <img src="../img/Pet shop principal 2 (2).jpg">
+            <img src="../img/Pet shop principal 2 (2).jpg" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
             </div>
             <div>
             <p> Tenemos todo lo necesario para el confort de su mascota, por lo cual contamos con una amplia
@@ -50,19 +56,19 @@
 
             <div>
                 <h3>ALIMENTOS PERROS Y GATOS</h3>
-                <img src="../img/Alimentos.jpg">
+                <img src="../img/Alimentos.jpg" data-aos="fade-right">
             </div>   
             <div>
                 <h3>CORREAS Y COLLARES</h3>
-                <img src="../img/Correas.jfif">
+                <img src="../img/Correas.jfif" data-aos="fade-left">
             </div>
             <div>
                 <h3>CAMAS Y COLCHONES</h3>
-                <img src="../img/cama2.jpg">
+                <img src="../img/cama2.jpg" data-aos="fade-right">
             </div>
             <div>
                 <h3>ACCESORIOS</h3>
-                <img src="../img/Accesorios2.jpg">
+                <img src="../img/Accesorios2.jpg" data-aos="fade-left">
             </div>
 
         </section>
@@ -111,6 +117,11 @@
     </div>
 
 </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

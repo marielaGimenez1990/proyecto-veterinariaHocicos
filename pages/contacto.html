@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- link animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Logo2.jpg">
     <link rel="stylesheet" href="../css/styles.css">
@@ -15,7 +19,7 @@
 <!-- Header-->
     <header class="navBackgroundSecciones">
         <!-- logo -->
-        <a href="../index.html"><img width="70" height="70" src="../img/Logo2.jpg" class="logo"></a>
+        <a href="../index.html"><img width="70" height="70" src="../img/Logo2.jpg" class="logo" data-aos="fade-right"></a>
         <h1>VETERINARIA HOCICOS</h1>
         <h2>Contactanos</h2>
         <nav>
@@ -34,7 +38,7 @@
 
         <h1>Dejanos tu mensaje</h1>
 
-        <h2>Contacto</h2>
+        <h2 data-aos="flip-left">Contacto</h2>
         
         <section class="formularioContacto">
 
@@ -95,7 +99,7 @@
         
         
         <section >
-            <h2>Donde nos encontramos?</h2>
+            <h2 data-aos="flip-left">Donde nos encontramos?</h2>
             
             <div class="mapaContacto">
             <div>
@@ -113,7 +117,7 @@
             </div>
         </section>
 
-        <h2>Nuestros horarios</h2>
+        <h2 data-aos="flip-left">Nuestros horarios</h2>
         <section class="tablaContacto">
         
         <div>
@@ -207,6 +211,10 @@
 
 </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

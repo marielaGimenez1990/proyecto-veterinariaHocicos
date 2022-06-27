@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Logo2.jpg">
+
+    <!-- link animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/styles.css">
 
     <title>Veterinaria Hocicos - Servicios</title>
@@ -15,7 +19,7 @@
     <!-- Header-->
     <header class="navBackgroundSecciones">
         <!-- logo -->
-        <a href="../index.html"><img width="70" height="70" src="../img/Logo2.jpg" class="logo"></a>
+        <a href="../index.html"><img width="70" height="70" src="../img/Logo2.jpg" class="logo" data-aos="fade-right"></a>
         <h1>VETERINARIA HOCICOS</h1>
         <h2>Nuestros servicios</h2>
         <nav>
@@ -36,14 +40,16 @@
         <div class="cajaPrincipalServicios">
             <!--Seccion principal-->
             <section id="seccionPrincipalServicios">
-                <h3> Atención personalizada <br/>-Silvina Marinelli-</h3>
+                <h3 data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"> Atención personalizada <br/>-Silvina Marinelli-</h3>
             </section>
 
         <!--Nosotras-->
 
         <!--Seccion Nosotras-->
         <section id="seccionNosotrasServicios">
-            <h2>NOSOTRAS</h2>
+            <h2 data-aos="flip-left">NOSOTRAS</h2>
             <p>Nuestra misión es estar al de la <strong> salud de las mascotas </strong> y acompañarlos de la mejor manera en cada etapa de sus vidas. Desde 1997 nuestra veterinaria brinda la mejor atención veterinaria para tu mascota. Para ello, seleccionamos los mejores profesionales veterinarios, quienes continúan en capacitación y formación constante, para darle la más cálida y profesional atención a tu mascota. Así también, queremos dejarlos lo más coquetos posibles. </p>
                 <p><span> Brindamos los siguientes servicios:</span></p>
                 <ul class="nosotrasListaServicios">
@@ -64,7 +70,7 @@
 
         <section class="unionCajasServicios">
 
-            <h2>NUESTROS SERVICIOS</h2>
+            <h2 data-aos="flip-left">NUESTROS SERVICIOS</h2>
 
         <div class="serviciosFlex">
             <div class="atencion">
@@ -128,6 +134,11 @@
         </div>
 
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
