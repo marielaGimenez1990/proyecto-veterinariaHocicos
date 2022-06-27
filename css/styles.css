@@ -211,9 +211,8 @@ table {
     padding-top: 1.5rem;
     background-color: rgb(63, 161, 145);
     border:solid rgb(184,184,184);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+
 } 
 
 #seccionBlog h2 {
@@ -1339,9 +1338,13 @@ button{
     .logo{
         width: 100px;
         height: 100px;
-   
+        transition: height 2s, width 1s;
     }
-    
+
+    .logo:hover {
+        height: 200px; width: 200px;
+    }
+
     #seccionNosotrasServicios{
         padding-left: 1rem;
     }
@@ -1423,7 +1426,6 @@ button{
     #nuestrosClientes img:hover{
         transform: scale(2,2);
     } 
-     
 
     #preguntasFrecuentes .seccionPreguntas{
         display: flex;
