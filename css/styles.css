@@ -12,6 +12,7 @@
 header {
     height: 140px;
     padding: 8px;
+    z-index: 2;
 }    
 
 body{
@@ -115,6 +116,7 @@ h2{
     font-weight: 1000;
     background-color: rgb(67, 68, 68);
     text-align: center;
+    z-index: -2;
     }   
 
 
