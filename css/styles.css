@@ -243,6 +243,7 @@ footer {
     font-family: 'Roboto Serif', serif;
     line-height: 1.2rem;
     padding-left: 0.5rem;
+    background-image: linear-gradient(rgb(37, 37, 37) , rgb(87, 87, 86));
 } 
 
 .cajaFooter {
@@ -256,7 +257,7 @@ footer {
 
 .cajaFooter a{
     position:fixed;
-    bottom: 20vw;
+    bottom: 10vw;
     right: 3vw;
 } 
 
@@ -514,6 +515,7 @@ footer {
     padding: 0.2rem;
     text-align: center;
     margin-top: 1rem;
+    background-image: radial-gradient(rgb(104, 139, 141) , rgb(209, 212, 212));
 }  
 
 #chapitas img{
