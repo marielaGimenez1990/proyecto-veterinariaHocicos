@@ -438,14 +438,25 @@ text-align: center;
     gap: 1rem 1rem;
 }  */
 
-/* #nuestrosClientes img{
-    width: 100px;
-    height: 120px;
-}   */
+#nuestrosClientes{
+    display: inline-block;
+}
 
-/* #nuestrosClientes img:hover{
+#carouselExampleIndicators{
+    width: 70%;
+    align-items: center;
+    margin:0;
+    display:flex;
+    justify-content: center;
+}
+#nuestrosClientes img{
+    width: 100px;
+    height: 200px;
+}   
+
+#nuestrosClientes img:hover{
     transform: scale(2,2);
-}   */
+}  
 
 /* #preguntasFrecuentes h3{
     text-align: center;
