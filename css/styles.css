@@ -55,7 +55,6 @@ h3{
 main {
 
     line-height: 1,5;
-    background-color: rgb(255, 238, 218);
 }   
 
 main p {
@@ -92,7 +91,7 @@ h2{
     border-radius: 2rem;
     height: 230px;
     font-size: 12px;
-}      */
+}      
 
 button{
     align-self: center;
@@ -100,97 +99,14 @@ button{
     text-decoration:underline;
     color: rgb(83, 83, 87);
     margin-bottom: 1rem;
+    display: inline-block;
 }   
 
-/* Seccion Nosotras */
-
-/* #seccionNosotras {
-    text-align: center;
-    padding-top: 1rem;
-}    */
-
-/* #seccionNosotras span {
-    font-weight: bold;
-}   */
-
-/* #seccionNosotras #nosotras-1 {
-    color:rgb(96, 54, 109);
-}    */
-
-/* #seccionNosotras .nosotrasLista {
-    list-style:circle;
-    padding-left: 2rem;
-    font-family: 'Roboto Serif', serif;
-    color:rgb(96, 54, 109);
-    text-align: justify;
-}     */
-
-/* Seccion Contacto */
-/* 
-#seccionContacto {
-    padding-top: 1.5rem;
-}    */
-/* 
-#seccionContacto p{
-    padding: 0.6rem;
-}   */
-
-/* #seccionContacto iframe {
-    border:dashed rgb(184, 184, 184);
-    height: 30vw;    
-    width: 100%;
-}       */
-
-/* Seccion Horarios */
-
-/* #seccionHorarios {
-    text-align:center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}   */
-
-/* #seccionHorarios h2{
-    text-align:center;
-    margin-bottom: 1rem;
-}   */
-
-/* table {
-    background-color: rgb(247, 244, 244);
-    width: 100%;
-    height: 10rem;
-    padding: 1rem;
-    justify-content: center;
-
-}  */
-
-/* Seccion Blog */
-
-/* #seccionBlog {
-    padding-top: 1.5rem;
-    background-color: rgb(63, 161, 145);
-    border:solid rgb(184,184,184);
-    padding: 1rem;
-
-}  */
-
-/* #seccionBlog h2 {
-text-align: center;
-}  */
-
-/* #seccionBlog p{
-    color: white;
+.blog {
+    background-color: rgb(46, 131, 88);
     font-weight: 300;
     text-align: justify;
-}  */
-
-/* #seccionBlog a {
-    text-decoration-line: underline;
-    color: rgb(116, 67, 161);
-}  */
-
-/* #seccionBlog iframe {
-    width: 100%;
-}  */
+}  
 
 /* --------- Index Footer  -------------- */
 
@@ -222,48 +138,6 @@ footer {
     line-height: 0.7rem;
 }  
 
-/*-- agregado para otros html --*/
-
-/* .navBackgroundSecciones {
-    background-color: rgb(148, 98, 136);
-    color: white;
-    text-align: center;    
-    position: sticky;
-	top: 0rem;
-    padding-bottom:8px;
-    padding-top: 8px;    
-} */
-
-/* .navBackgroundSecciones .navLista li a{
-    color: white;
-    padding: 0.1rem ;
-	margin-bottom: 10px;
-    font-size: 15px;
-    
-    }  */
-
-/* .navBackgroundSecciones img {
-        padding: 5px;
-        position: absolute;
-        left:0rem;
-        top:1rem;
-    }   */
-
-/* .navBackgroundSecciones h2{
-    color: white;
-    padding: 0%;
-    margin-top: -2px;
-    margin-bottom: 5px;
-    background-color: rgb(96, 54, 109);
-    display:inline-block;
-    font-size: 16px;
-}  */
-
-/* 
-.navBackground img {
-    width: 60px;
-    height: 60px;
-} */
 
 /*--------------------- SERVICIOS HTML--------------------*/
 
@@ -402,12 +276,6 @@ footer {
 }  */
 
 
-
-#nuestrosClientes img{
-    width: 100px;
-    height: 200px;
-}   
-
 /* #nuestrosClientes img:hover{
     transform: scale(2,2);
 }   */
@@ -420,7 +288,7 @@ footer {
 
 
 .accordion-item{
-    background-color: rgb(63, 95, 84);
+    background-color: rgb(46, 131, 88);
     color: rgb(242, 239, 245);
 }
 
@@ -608,32 +476,8 @@ padding-right: 2rem;
     font-size: 1em;
 }   */
 
-/* #seccionBlog iframe {
-    width: 100%;
-}  */
 
- /* Footer */
 
-/* footer {
-    display: flex;
-    flex-direction: row;
-    justify-content:left;
-    align-items:space-between; 
-    height: 210px;
-    align-items: center;
-}  */
-
-/* .cajaFooter {
-    margin-left: 1rem;
-    margin-right: 10px;
-}  */
-
-/* .cajaFooter a{
-    position:fixed;
-    padding-bottom: 0px;
-    margin-bottom: -50px;
-    right: 3vw;
-}  */
 
 
 /* ----------- Modificiones SERVICIOS 481-768 ------------- */
@@ -821,30 +665,8 @@ input {
 
 /* ----------- Modificiones INDEX 769-1024 ------------- */
 
-/* h1 {
-    font-size: 1.8em;
-} */
 
-/* .navBackground .navLista li a{
-    padding: 0.5rem ;
-    font-size: 1.3em;
-    }     */
 
-/* .navBackground img {
-    height: 80px;
-    width: 80px;
-}     */
-
-/* .navBackground h1{
-    padding: 0.8rem;
-}    */
-
- /* Main */
-
-/* main {
-    padding-bottom: 2px;
-    } */
-    
 /* #seccionPrincipal h3 {
     background-size:cover;
     height: 600px;
@@ -898,69 +720,10 @@ input {
         height: 600px;
     }   */
 
-    /* Footer */
-
-    /* footer {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        align-items:center; 
-        padding-right: 90px;
-        height: 210px;
-    }  */
     
-    /* .cajaFooter {
-        margin-left: 1rem;
-        margin-right: 10px;
-    }  */
-
-    /* .cajaFooter a{
-        position:fixed;
-        padding-bottom: 0px;
-        right: 3vw;
-        margin-bottom: -170px;
-    }  */
-
     /* ----------- Modificiones SERVICIOS 769-1024 ------------- */
 
-/* .navBackgroundSecciones h2{
-    font-size: 1.5em;
-}  */
 
-
-/* .navBackgroundSecciones .navLista li a{
-    padding: 0.5rem ;
-    font-size: 1.2em;
-    }     */
-
-/* .navBackgroundSecciones img {
-    height: 90px;
-    width: 80px;
-}     */
-
-/* .navBackgroundSecciones h2{
-    margin-top: -1px;
-}  */
-
-/* .navBackground img {
-    width: 80px;
-    height: 80px;
-} */
-/* 
-#seccionPrincipalServicios h3 {
-    height: 300px;
-    width: 100%;
-}     */
-
-/* .unionCajasServicios img {
-    width: 30vw;
-    height: 250px;
-
-}  */
-
-/* .unionCajasServicios h3 {
-    height: 80px;
-} */
 
 /* .serviciosFlex{
     display: grid;
@@ -1145,8 +908,6 @@ margin-top: 1rem;
     }
 
 
-
-
 /* -------------- otrasVistas (+1025 px -1200) -------------- */
 
 /* @media (min-width: 1025px) { */
@@ -1154,29 +915,6 @@ margin-top: 1rem;
 /* ----------- Modificiones INDEX (+1025 px -1200) ------- */
 
 
-/* h1 {
-    font-size: 1.8em;
-} */
-    
-/* .navBackground .navLista li a{
-    padding: 0.5rem ;
-    font-size: 1.3em;
-    }     */
-
-/* .navBackground img {
-    height: 100px;
-    width: 100px;
-}     */
-
-/* h1{
-    padding: 0.8rem;
-}    */
-
- /* Main */
-
-/* main {
-    padding-bottom: 2px;
-    } */
     
 /* #seccionPrincipal h3 {
     background-size:cover;
