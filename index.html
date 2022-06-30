@@ -33,23 +33,23 @@
 
     <!-- Header-->
 
-    <header class="navBackground">
+    <header class="navBackground ">
         
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light ">
             
-                <a class="navbar-brand" href="#"><img src="./img/Logo2.jpg" alt="logoNav" class="w-25" data-aos="fade-right"></a>
+                <a class="navbar-brand" href="#"><img src="./img/Logo2.jpg" alt="logoNav" class="w-50" data-aos="fade-right"></a>
 
                 <h1 class="fw-bold text-center fs-1 tblanco">VETERINARIA HOCICOS</h1>
 
-            <div class="container-fluid">
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+                <div class="collapse navbar-collapse border-bottom justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav fw-semibold">
+                        <li class="nav-item ">
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
@@ -69,8 +69,6 @@
                 </div>
             </div>
         </nav>
-
-
     </header>
 
 
@@ -81,15 +79,17 @@
     <main class="contenedor">
         <div class="cajaPrincipal">
             <!--Seccion principal-->
-            <section id="seccionPrincipal">
-                <h3 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> Dra. Silvina
-                    Marinelli</h3>
+            <section id="imagenPrincipal" class="p-0 m-0">
+                <img src="./img/Atencion integral.jpg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="img-fluid"> </img>
                 <!-- <img src="../img/Principal.jpg"> -->
 
             </section>
             <!--Seccion Nosotras-->
             <section id="seccionNosotras">
-                <h2 data-aos="flip-left" class="fst-">NOSOTRAS</h2>
+                <h2 data-aos="flip-left" class="fst- mt-2">NOSOTRAS</h2>
+            <div class="row">
+
+                <div class="col-12 col-md-6 ">
                 <p id="nosotras-1">Nuestra misión es estar al de la <strong> salud de las mascotas </strong> y
                     acompañarlos de la
                     mejor manera en cada etapa de sus vidas. Desde 1997 nuestra veterinaria brinda la mejor atención
@@ -103,42 +103,36 @@
                     <li>Cirugías generales</li>
                     <li>Peliquería canina</li>
                 </ul>
-
-                <h3>Turnos de peluquería al 1141760466</h3>
-                <p class="colorGris">Banos y cortes de pelo para perros de Martes a Sábados </p>
+                </div>
+                
+                <div class="col-12 col-md-6 p-0 d-flex flex-column justify-content-center" >
+                <h3 class="p-2 m-0">Turnos de peluquería al 1141760466</h3>
+                <p class="p-2 m-0 text-center">Banos y cortes de pelo para perros de Martes a Sábados </p>
                 <a href="https://wa.me/541141760466" target="blank"><button>Sacá turno enviando tu mensaje
                         aqui</button></a>
-
+                </div>
             </section>
         </div>
+        
+        <div class="container-fluid">       
+            <div class="row ">
+
+            <!--Seccion Contacto-->
 
 
-        <!--Seccion Contacto-->
-        <div class="contacto">
-
-            <h2 data-aos="flip-left">CONTACTO</h2>
-            <section id="seccionContacto">
-
-
+                <section class="col-12 col-md-8 p-2" >
+                <h2 data-aos="flip-left" class="p-2">CONTACTO</h2>
                 <p>Nos encontamos en Av. Gaona 2009, Ramos Mejía, Buenos Aires </br>
                     Teléfono 011 15-4949-9584 </br>
                     Turnos para peluquería 11-41760466 </p>
-
-                <iframe
+                
+                    <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7109908723874!2d-58.56102761999793!3d-34.63674308054672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7fc93780237%3A0x8b14204779a39736!2sAv.%20Gaona%202009%2C%20B1704END%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653665014357!5m2!1ses-419!2sar"
-                    width="" height="" style="border:4" allowfullscreen="" loading="lazy"
+                    class="w-100 " style="border:4" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-            </section>
-        </div>
-
+                
         <!--Seccion Horarios-->
-
-        <div class="horarios">
-            <section id="seccionHorarios">
-
-                <h2 data-aos="flip-left">NUESTROS HORARIOS</h2>
+                <h2 data-aos="flip-left" class="p-2">NUESTROS HORARIOS</h2>
                 <!-- TABLA DE HORARIOS  -->
 
                 <table>
@@ -186,17 +180,18 @@
                     </tbody>
 
                 </table>
-            </section>
-        </div>
+            
 
+                
+            </section>
+        <section class="col-12 col-md-4 p-2" >
         <!--Tips y novedades para tus mascotas-->
-        <div class="blog">
-            <aside id="seccionBlog">
-                <h2 data-aos="flip-left">BLOG MASCOTERO</h2>
+
+                <h2 data-aos="flip-left" class="p-2">BLOG MASCOTERO</h2>
                 <div>
                     <p> - Pequeña gatita y gran perro son mejores amigos </p>
 
-                    <iframe width="200" height="200" src="https://www.youtube.com/embed/GmmBOXvBD9c"
+                    <iframe class="w-100" height="200" src="https://www.youtube.com/embed/GmmBOXvBD9c"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -212,11 +207,11 @@
                         target="blank"> Más info</a>
                 </p>
 
-                <p>- Viruela del mono y animales: estas son las mascotas domésticas que pueden contagiarse <a
+                <p class="mb-0">- Viruela del mono y animales: estas son las mascotas domésticas que pueden contagiarse <a
                         href="https://www.elespanol.com/ciencia/salud/20220526/viruela-mono-animales-mascotas-domesticas-pueden-contagiarse/675432681_0.html"
                         target="blank"> Más info</a>
                 </p>
-            </aside>
+
 
         </div>
 
@@ -230,7 +225,7 @@
 
     <section ID="cajaFooter" class="container py-5 justify-content-around text-justify">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 pb-2">
                 <h4>Contacto</h4>
                 <p> Av. Gaona 2009, Ramos Mejía, Buenos Aires </p>
                 <p>Teléfono 011 15-4949-9584 </p>
