@@ -37,6 +37,7 @@ html{
 
 h1{
     font-family:'Libre Baskerville', serif;
+    
 }    
 
 h3{
@@ -94,12 +95,7 @@ h2{
 }      
 
 button{
-    align-self: center;
     padding: 0.5rem;
-    text-decoration:underline;
-    color: rgb(83, 83, 87);
-    margin-bottom: 1rem;
-    display: inline-block;
 }   
 
 .blog {
