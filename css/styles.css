@@ -37,7 +37,6 @@ html{
 
 h1{
     font-family:'Libre Baskerville', serif;
-    
 }    
 
 h3{
@@ -70,7 +69,7 @@ h2{
 
     color:rgb(231, 219, 235);
     background-color: rgb(88, 88, 88);
-    text-align: center;
+    text-align: center¿;
     z-index: -2;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }     
@@ -126,7 +125,7 @@ footer {
 
 #cajaFooter a{
     position:fixed;
-    bottom: 10vw;
+    bottom: 5vw;
     right: 3vw;
 }  
 
@@ -135,152 +134,34 @@ footer {
 }  
 
 
-/*--------------------- SERVICIOS HTML--------------------*/
+/*--------------------- SERVICIOS HTML----------------*/
 
-/* #seccionPrincipalServicios h3 {
-    background-image: url(../img/Atencion\ integral1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 200px;
-    width: 100%;
-    padding: 1rem;
-    font-family: 'Libre Baskerville', serif;
-    border: solid 0.5rem rgb(233, 200, 233);
-    text-align: left;
-    color: rgb(96, 54, 109);
-    border-radius: 2rem;
-}     */
-
-/* .cajaPrincipalServicios h2 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-} */
-
-/* #seccionNosotrasServicios p{
-    text-align: justify;
-    size: 1vw;
-    color: rgb(96, 54, 109);
-    font-weight: bold;
-}  */
-
-/* #seccionNosotrasServicios button {
-    margin-left: 20px;
-    color: rgb(96, 54, 109);
-}  */
-
-/* #seccionNosotrasServicios .nosotrasListaServicios {
-    list-style:circle;
-    padding-left: 2rem;
-    font-family: 'Roboto Serif', serif;
-    color:rgb(96, 54, 109);
-    text-align: justify;
-}     */
-
-/* .unionCajasServicios img {
-    width: 100%;
-    height: 250px;
+#seccionPrincipalServicios h3{
+    color: rgb(29, 94, 29);
+    text-decoration: dashed;
+}
+.card {
     border-radius: 1rem;
-    border-color: grey;
-    border-style: solid;
-}   */
+    border-width: 0.3rem;
+    border-color: rgb(240, 167, 79);
+}
 
-/* .unionCajasServicios h3 {
-    padding: 1rem;
-} */
+.card-title {
+    color: rgb(29, 94, 29);
+}
 
+/*----------------- PELUQUERIA HTML------------------*/
 
-/* .atencion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .diagnostico {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .cirugias {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-} */
-
-/*----------------- PELUQUERIA HTML----------------------*/
-
-/* .unionCajasPeluqueria {
-    display: flex;
-    padding: 1rem;
-    text-align: center;
-    flex-direction: column;
-}   */
-
-/* .unionCajasPeluqueria .imagenPeluqueria{
-    width: 80vw;
-    height: 60vw;
-    border-radius: 4rem;
-}   */
-
-/* #peluqueriaTurnosDescripcion {
-    justify-content:center;
-    display: inline-block;
-    text-align: center;
-
-}  */
-
-/* #peluqueriaTurnosDescripcion h2{
-    background-color: rgb(174, 174, 177);
-    color: rgb(247, 241, 248);
-    margin-top: 1rem;
-    border: solid;
-    border-color: rgb(43, 117, 119);
-} */
-
-/* #peluqueriaTurnosDescripcion ul{
-    margin-left: 2rem;
-} */
-
-/* #peluqueriaTurnosDescripcion p{
-    text-align: center;
-}  */
-
-/* #nuestrosClientes h3{
-    text-align: center;
-    display: block;
-    padding-bottom: 15px;
-    color: rgb(96, 54, 109);
-}   */
-
-/* .nuestrosClientesimg {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-left: 2vw; 
-    margin-bottom: 2vw;
-    border-width: 2px;
-    border-color: grey;
-    flex-wrap: wrap;
-    gap: 1rem 1rem;
-}  */
+.serviosIncluidos li{
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
 
 
-/* #nuestrosClientes img:hover{
-    transform: scale(2,2);
-}   */
+.turnos a:hover{
+    transform: scale(1.2,1.2);
 
-/* #preguntasFrecuentes h3{
-    text-align: center;
-    display: block;
-    padding: 1REM;
-}   */
+}   
 
 
 .accordion-item{
@@ -288,19 +169,20 @@ footer {
     color: rgb(242, 239, 245);
 }
 
-/* #preguntasFrecuentes h4{
-    text-align: center;
-}   */
+@media screen and (min-width: 992px){
 
-/* .seccionPreguntas p{
-    padding: 1rem;
-    text-align: justify;
-}   */
-
-/* .higieneMascotas {
-    font-weight: bold;
-}  */
-
+    .preguntasFrecuentes {
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
+    
+    #preguntasFrecuentes h2{
+        text-align: center;
+    }
+}
 
 /*-------------------- PET SHOP HTML-------------------*/
 
