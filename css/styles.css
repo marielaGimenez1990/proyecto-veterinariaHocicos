@@ -1,4 +1,3 @@
-
 /*---------------------------------- cssGeneral---------------*/
 
 *{
@@ -18,6 +17,18 @@ a:hover {
     border-style: solid;
 }   
 
+a:link { 
+    text-decoration:none; color:rgb(35, 122, 108); 
+}
+
+a:visited{ 
+    color:#c8c8c9; 
+}
+
+a:active{ 
+    background-color:rgb(35, 122, 108); color:black; 
+}
+
 
 html{
     font-size: 62,5%;
@@ -26,7 +37,6 @@ html{
 .texto{
     font-size: 2rem;
 }
-
 
 .tblanco{
     color: white;
@@ -47,10 +57,7 @@ h3{
     text-decoration:underline;
 }   
 
-
 /* -------------- indexMain  -------------- */
-
-/* Propiedades generales */
 
 main {
 
@@ -73,7 +80,6 @@ h2{
     z-index: -2;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }     
-
 
 /* Seccion Principal */
 
@@ -137,7 +143,7 @@ footer {
 /*--------------------- SERVICIOS HTML----------------*/
 
 #seccionPrincipalServicios h3{
-    color: rgb(29, 94, 29);
+    color: rgb(35, 122, 108);
     text-decoration: dashed;
 }
 .card {
@@ -157,15 +163,13 @@ footer {
     padding-bottom: 0.5rem;
 }
 
-
 .turnos a:hover{
     transform: scale(1.2,1.2);
 
 }   
 
-
 .accordion-item{
-    background-color: rgb(46, 131, 88);
+    background-color: rgb(35, 122, 108);
     color: rgb(242, 239, 245);
 }
 
@@ -182,118 +186,80 @@ footer {
     #preguntasFrecuentes h2{
         text-align: center;
     }
+
+
 }
 
 /*-------------------- PET SHOP HTML-------------------*/
 
-#seccionPetshop img{
-    width: 100%;
-    height: 300px;
+.principalPet img{
     border-radius: 1rem;
     border: solid rgb(19, 114, 117);
-}  
-
-#seccionPetshop p{
-    text-align: center;
-    text-decoration: solid;
-    font-weight: bold;
-}  
-
-#petshopVenta {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-#petshopVenta h3{
-    padding: 1rem;
-}
-
-#petshopVenta img{
-    width: 75%;
-    height: 250px;
-    border: solid rgb(19, 114, 117);
-    border-style: dotted;
+    margin-left: 0.2rem;
 }
 
 
-#chapitas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(226, 223, 223);
+.mainPet{
+    background-image: url(../img/Fondo\ huellas\ beige.webp);
+}
+
+.pagos {
+    background-color: rgb(109, 110, 110);
     border-radius: 1rem;
-    border-style:ridge;
-    padding: 0.2rem;
-    text-align: center;
-    margin-top: 1rem;
-    background-image: radial-gradient(rgb(104, 139, 141) , rgb(209, 212, 212));
-}  
-
-#chapitas img{
-    width: 65%;
-    height: 200px;
+    color: white;
+    background-image: radial-gradient(rgb(53, 54, 54) , rgb(156, 156, 156));
 }
 
-#chapitas h3{
-    padding-top: 0rem;
-}
 
-#chapitas p{
-    text-align: center;
-}
 
-.chapitasPet input {
-    width: 50%;
-}
 
 /*-------------------- CONTACTO HTML-------------------*/
 
-.formularioContacto{
+/* .formularioContacto{
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-} 
-
+}  */
+/* 
 .formularioSolo div {
     padding: 0.5rem;
 
-}  
+}   */
 
-.formularioSolo p{
+/* .formularioSolo p{
     font-weight: bold;
-}  
+}   */
 
-.formularioSolo #select-mascota {
+/* .formularioSolo #select-mascota {
     margin-top: 1rem;
-}
-
+} */
+/* 
 .comentarios {
     text-align: center;
     display: flex;
     flex-direction: column;
-}
+} */
 
-.comentarios input{
+/* .comentarios input{
     width: 50%;
     margin-bottom: 0.5rem;
-}
-
+} */
+/* 
 .mapaContacto {
     display: inline-flex;
     margin-top: 30px;
     margin-bottom: 10px;
     align-items: center;
     flex-direction: column;
-}  
+}   */
 
-.mapaContacto p{
+/* .mapaContacto p{
     padding: 0.3rem;
     text-align: justify;
-}
+} */
 
-input {
+/* input {
     background-color: rgb(240, 238, 240);
     border: 1px solid;
     line-height: inherit;
@@ -302,213 +268,89 @@ input {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-}  
-
+}   */
+/* 
 .tablaContacto  {
     margin-top: 1rem;
-}
+} */
 
 
 /*------------------------APLICANDO MEDIA QUERY----------------------------*/
 
-@media screen and (min-width: 425px) and (max-width: 480px){
+@media screen and (min-width: 425px) and (max-width: 480px){}
 
-    /* ----------- Modificiones INDEX 425-480 ------------- */
-    
-    
-    /* h1 {
-        font-size: 1.8em;
-    } */
-    
-    /* .navBackground .navLista li a{
-        font-size: 1.3em;
-        }   
-    } */
 
 
 /*-------------------------- vista tablet (481 a 768px)---------------*/
+
 
 @media screen and (min-width: 481px) and (max-width: 768px){
 
 /* ----------- Modificiones INDEX 481-768 ------------- */
 
 
-/* h1 {
-    font-size: 1.8em;
-} */
-
-/* .navBackground .navLista li a{
-    font-size: 1.3em;
-    }    */
-
- /* Main */
-/* main {
-padding-bottom: 70px;
-padding-right: 2rem;
-} */
-/* 
-#seccionPrincipal h3 {
-    background-size:cover;
-    background-position: top;
-    height: 330px;
-    font-size: 1em;
-}   */
-
-
-
-
-
 /* ----------- Modificiones SERVICIOS 481-768 ------------- */
 
-/* .navBackgroundSecciones .navLista li a{
-    font-size: 1.2em;
-    }  */
 
-/* .navBackgroundSecciones h2{
-    font-size: 1.5em;
-}  */
-
-/* .navBackground img {
-    width: 63px;
-    height: 63px;
-}  */
-
-/* #seccionPrincipalServicios h3 {
-    height: 300px;
-    width: 100%;
-}     */
-
-/* .unionCajasServicios img {
-    width: 300px;
-    height: 250px;
-
-}  */
-
-/* .atencion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .diagnostico {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .cirugias {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-} */
 
 /* ----------- Modificiones PELUQUERIA 481-768 ------------- */
-
-/* #peluqueriaTurnosDescripcion ul{
-    list-style: none;
-}   */
 
 
 /*-----------Modificiones PET SHOP 481-768---------------*/
 
-#seccionPetshop {
-    text-align: center;
-    display: inline-block;
-    justify-content: center;
-}
-
-
-#seccionPetshop img{
-    width: 90%;
-    height: 400px;
-}  
-
-
-#petshopVenta {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    text-align: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-}
-
-
-#petshopVenta img{
-    width: 300px;
-    height: 250px;
-} 
-
-
-#chapitas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}  
-
-#chapitas img{
-    width: 100%;
-    height: 200px;
-}
-
 
 /* ----------- Modificiones CONTACTO 481-768 ------------- */
 
-.formularioContacto{
+/* .formularioContacto{
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-} 
+}  */
 
-.formularioSolo div {
+/* .formularioSolo div {
     padding: 0.5rem;
 
-}  
+}   */
 
-.formularioSolo p{
+/* .formularioSolo p{
     font-weight: bold;
     text-align: center;
-}  
+}   */
 
-.checkbox{
+/* .checkbox{
     display: flex;
     text-align: center;
     justify-content: center;
-}
+} */
 
-.formularioSolo #select-mascota {
+/* .formularioSolo #select-mascota {
     margin-top: 1rem;
-}
+} */
 
-.comentarios {
+/* .comentarios {
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.mapaContacto {
+/* .mapaContacto {
     display: flex;
     margin-top: 30px;
     margin-bottom: 10px;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-}  
+}   */
 
-.mapaContacto p{
+/* .mapaContacto p{
     padding: 0.3rem;
     text-align: justify;
-}
+} */
 
-input {
+/* input {
     background-color: rgb(240, 238, 240);
     border: 1px solid;
     line-height: inherit;
@@ -518,48 +360,19 @@ input {
     align-items: center;
     width: 100%;
     margin: 0.2rem;
-}  
+}   */
 
-.tablaContacto {
+/* .tablaContacto {
     text-align: center;
-}
+} */
 
 }  
-
-/* ----------- Modificiones SERVICIOS 525-768 ------------- */
-
-@media screen and (min-width: 525px) and (max-width: 768px){
-
-/* .navBackground img {
-    width: 75px;
-    height: 75px;
-} */
-}
-
 
 /*------------------------------- vista tablet/pc (769 a 1024px)---------------*/
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
 
 /* ----------- Modificiones INDEX 769-1024 ------------- */
-
-
-
-/* #seccionPrincipal h3 {
-    background-size:cover;
-    height: 600px;
-    width: 300px;
-    font-size: 1em;
-    padding-top: 10rem;
-    }   */
-
-/* .cajaPrincipal {
-    height: 800px;
-} */
-
-/* #seccionNosotras {
-    padding-left: 20px;
-} */
 
     /* --------- APLICANDO GRIDS  ------- */
 
@@ -601,8 +414,6 @@ input {
     
     /* ----------- Modificiones SERVICIOS 769-1024 ------------- */
 
-
-
 /* .serviciosFlex{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -624,34 +435,6 @@ input {
 
     /* ----------- Modificiones PELUQUERIA 769-1024 ------------- */
 
-    /* #preguntasFrecuentes .seccionPreguntas{
-    display: flex;
-    justify-content: space-between;
-}   */
-
-
-/* .unionCajasPeluqueria {
-    display: flex;
-    padding: 1rem;
-    text-align: center;
-    flex-direction: row;
-}   */
-
-/* .unionCajasPeluqueria .imagenPeluqueria{
-    width: 50vw;
-    height: 50vw;
-    border-radius: 4rem;
-margin-top: 1rem;
-}    */
-
-/* #peluqueriaTurnosDescripcion h2{
-    margin-left: 1rem;
-} */
-
-/* #nuestrosClientes img{
-    width: 150px;
-    height: 180px;
-}   */
 
 /* #nuestrosClientes img:hover{
     transform: scale(2,2);
@@ -660,114 +443,106 @@ margin-top: 1rem;
 
     /* ----------- Modificiones PET SHOP 769-1024 ------------- */
 
-#seccionPetshop {
+/* #seccionPetshop {
     text-align: center;
     display: flex;
     align-items: center;
-} 
+}  */
 
-
+/* 
 #seccionPetshop img{
     width: 35rem;
     height: 400px;
     margin-right: 0.4rem;
-}   
+}    */
 
-.pagos {
+/* .pagos {
     border: solid rgb(12, 97, 97);
     background-color: rgb(214, 219, 219);
-}
+} */
 
 
-#seccionPetshop p{
+/* #seccionPetshop p{
     padding: 0.5rem;
-} 
+}  */
 
 
-#petshopVenta {
+/* #petshopVenta {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     text-align: center;
     flex-wrap: wrap;
     padding: 1rem;
-} 
+}  */
 
 
-#petshopVenta img{
-    width: 400px;
-    height: 300px;
-}  
 
-
-#chapitas {
+/* #chapitas {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-}   
-
+}    */
+/* 
 #chapitas img{
     width: 300px;
     height: 250px;
-}  
+}   */
 
 
      /* ----------- Modificiones CONTACTO 769-1024 ------------- */
-
+/* 
     .formularioContacto{
         display: flex;
         flex-direction: column;
         align-items: left;
         justify-content: center;
     } 
-    
-    .formularioSolo div {
+     */
+    /* .formularioSolo div {
         padding: 0.5rem;
-    }  
+    }   */
     
-    .formularioSolo p{
+    /* .formularioSolo p{
         font-weight: bold;
         text-align: center;
     }  
-    
-    .checkbox{
+     */
+    /* .checkbox{
         display: flex;
         text-align: center;
         justify-content: center;
-    }
+    } */
 
-    .checkbox p {
+    /* .checkbox p {
         font-size: 1em;
-    }
+    } */
 
-    .formularioSolo #select-mascota {
+    /* .formularioSolo #select-mascota {
         margin-top: 1rem;
     }
-    
-    .comentarios {
+     */
+    /* .comentarios {
         text-align: center;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-    
-    .mapaContacto {
+     */
+    /* .mapaContacto {
         display: flex;
         margin-top: 30px;
         margin-bottom: 10px;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
-    }  
+    }   */
     
-    .mapaContacto p{
-        font-size: 1.2em;
-    }
     
-    input {
+    /* input {
         background-color: rgb(240, 238, 240);
         border: 1px solid;
         line-height: inherit;
@@ -778,369 +553,6 @@ margin-top: 1rem;
         width: 100%;
         margin: 0.2rem;
     }  
-    
-    .tablaContacto {
-        text-align: center;
-    }
+     */
 
     }
-
-
-/* -------------- otrasVistas (+1025 px -1200) -------------- */
-
-/* @media (min-width: 1025px) { */
-
-/* ----------- Modificiones INDEX (+1025 px -1200) ------- */
-
-
-    
-/* #seccionPrincipal h3 {
-    background-size:cover;
-    height: 52vh;
-    width: 45vw;
-    font-size: 1.2em;
-    }   */
-
-
-/* #seccionNosotras {
-    padding-left: 20px;
-} */
-
-    /* --------- APLICANDO GRIDS (seccionContacto)  ------- */
-
-/* #seccionContacto {
-    display: grid;
-    grid-template-columns: 30% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "p iframe" "p iframe";
-    justify-content: space-between;
-} */
-
-/* #seccionContacto p{
-    grid-area: p;
-
-} */
-
-/* button{
-    margin-bottom: 5rem;
-} */
-
-/* #seccionContacto iframe{
-    height: 15vw;
-    width: 30vw;
-    grid-area: iframe;
-
-} */
-
-
-    /* --------- APLICANDO GRIDS (main) ------- */
-
-/* .contenedor {
-    display: grid;
-    grid-template-columns: 50% 10% 40%;
-    grid-template-rows: 40% 30% 30%;
-    grid-template-areas: 
-    "principal principal principal" 
-    "contacto contacto blog" 
-    "horarios horarios blog" ;
-    grid-auto-flow: row;
-    gap: 10px 10px;
-    }  */
-
-    /* .cajaPrincipal {
-        grid-area: principal;
-        display: flex;
-    }  */
-    
-    /* .contacto {
-        grid-area: contacto;
-        padding-top: 0rem;
-        height: 50vh;
-    } */
-
-
-    /* .horarios {
-        grid-area: horarios;
-        height: 30vh;
-    }  */
-    
-    /* .blog {
-        grid-area: blog;
-        padding-left: 20px;
-        padding-bottom: 10px;
-        height: 600px;
-    }   */
-
-    /* Footer */
-
-    /* footer {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        align-items:center; 
-        padding-right: 90px;
-        height: 210px;
-        font-weight: 30;
-    }  */
-    
-    /* .cajaFooter {
-        margin-left: 1rem;
-        margin-right: 10px;
-    }  */
-
-    /* .cajaFooter a{
-        position:fixed;
-        padding-bottom: 0px;
-        right: 3vw;
-        margin-bottom: -170px;
-    }  */
-
-    /* ----------- Modificiones SERVICIOS (+1025 px -1200) ------- */
-    
-
-    /* .navBackgroundSecciones h2{
-        font-size: 1.5em;
-    }  */
-    
-    
-    /* .navBackgroundSecciones .navLista li a{
-        padding: 0.5rem ;
-        font-size: 1.2em;
-        }     */
-    
-    /* .navBackgroundSecciones h2{
-        margin-top: -1px;
-    }  */
-    
-    /* .logo{
-        width: 100px;
-        height: 100px;
-        transition: height 2s, width 1s;
-    } */
-
-    /* .logo:hover {
-        height: 200px; width: 200px;
-    } */
-
-    /* #seccionNosotrasServicios{
-        padding-left: 1rem;
-    } */
-
-    /* .cajaPrincipalServicios {
-        display: flex;
-        align-items: center;
-    } */
-
-    /* #seccionPrincipalServicios h3 {
-        height: 60vh;
-        width: 60vw;
-    }     */
-
-
-    /* .unionCajasServicios img {
-        width: 15vw;
-        height: 20vh;
-        align-items: center;
-    
-    }  */
-    
-    /* .unionCajasServicios h3 {
-        height: 80px;
-    } */
-    
-    /* .serviciosFlex{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 100%;
-        grid-template-areas: "atencion diagnostico cirugia";
-        column-gap: 10px;
-    } */
-
-    /* .atencion {
-        grid-area: atencion;
-    } */
-    
-/* 
-    .diagnostico {
-        grid-area: diagnostico;
-    } */
-
-    
-    /* .cirugias {
-        grid-area: cirugia;
-    } */
-
-
-/* ----------- Modificiones PELUQUERIA (+1025 px -1200) ------- */
-
-    
-    /* .unionCajasPeluqueria {
-        display: flex;
-        padding: 1rem;
-        text-align: center;
-        flex-direction: row;
-        justify-content: space-around;
-    }   */
-    
-    /* .unionCajasPeluqueria .imagenPeluqueria{
-        width: 50vw;
-        height: 30vw;
-        border-radius: 4rem;
-    margin-top: 1rem;
-    }    */
-    
-    /* #peluqueriaTurnosDescripcion h2{
-        margin-left: 1rem;
-        text-align: center; 
-
-    } */
-
-    /* #nuestrosClientes img{
-        width: 16vw;
-        height: 15vw;
-    }   */
-
-    /* #nuestrosClientes img:hover{
-        transform: scale(2,2);
-    }  */
-
-    /* #preguntasFrecuentes .seccionPreguntas{
-        display: flex;
-        justify-content: space-between;
-    }   */
-    
-
-
-/* ----------- Modificiones PET SHOP (+1025 px -1200) ------- */
-
-#seccionPetshop {
-    text-align: center;
-    display: flex;
-    align-items: center;
-} 
-
-
-#seccionPetshop img{
-    width: 60rem;
-    height: 400px;
-    margin-right: 0.4rem;
-}   
-
-.pagos {
-    border: solid rgb(12, 97, 97);
-    background-color: rgb(214, 219, 219);
-}
-
-
-#seccionPetshop p{
-    padding: 0.5rem;
-} 
-
-
-#petshopVenta {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    text-align: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-} 
-
-#petshopVenta img{
-    width: 400px;
-    height: 300px;
-}   
-
-
-#chapitas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5em;
-}   
-
-#chapitas img{
-    width: 300px;
-    height: 250px;
-}  
-
-/*------------------------- CONTACTO HTML---------------*/
-
-.formularioContacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-} 
-
-.formularioSolo div {
-    padding: 0.5rem;
-
-}   
-
-.formularioSolo p{
-    font-weight: bold;
-    text-align: center;
-}   
-
-.checkbox{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-} 
-
-.checkbox p {
-    font-size: 1em;
-} 
-
-.formularioSolo #select-mascota {
-    margin-top: 1rem;
-} 
-
-.comentarios {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-} 
-
-.mapaContacto {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-}   
-
-.mapaContacto p{
-    font-size: 1.2em;
-} 
-
-input {
-    background-color: rgb(240, 238, 240);
-    border: 1px solid;
-    line-height: inherit;
-    max-height: 150px;
-    height: 30px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0.2rem;
-}   
-
-.tablaContacto {
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-} 
-
-.tablaContacto table{
-    width: 500px;
-    height: 200px;
-}
-
-}
