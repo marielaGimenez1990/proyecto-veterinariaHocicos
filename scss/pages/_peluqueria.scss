@@ -1,0 +1,40 @@
+.serviosIncluidos li{
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
+
+.accordion-item{
+    background-color: $color-terciario;
+    color: white;
+}
+
+
+.peluqueriaImg {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px){
+
+    .preguntasFrecuentes {
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
+    
+#preguntasFrecuentes 
+    h2{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+
+    .peluqueriaImg {
+        width: 98%;
+    }
+    
+    }
+

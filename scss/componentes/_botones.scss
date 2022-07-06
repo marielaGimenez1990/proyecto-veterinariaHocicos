@@ -1,0 +1,10 @@
+
+button {
+    padding: 0.5rem;
+    border: $color-principal solid 2px;
+    &:hover{
+        background-color: $color-narajaosc;
+        color: white;
+        }
+}
+
