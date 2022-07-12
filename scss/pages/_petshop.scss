@@ -10,8 +10,12 @@
     background-image: url(../img/Fondo\ huellas\ beige.webp);
 }
 
-.pagos {
+.petshopPagos{
     border-radius: 1rem;
     color: white;
-    background-color: radial-gradient(rgb(53, 54, 54) , rgb(156, 156, 156));
+    background-image: $color-background;
+}
+
+.petshopDescripcion{
+    font-weight: 600;
 }

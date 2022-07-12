@@ -102,7 +102,6 @@ footer {
 }
 
 button {
-  padding: 0.5rem;
   border: rgb(111, 0, 255) solid 2px;
 }
 button:hover {
@@ -165,14 +164,18 @@ button:hover {
   background-image: url(../img/Fondo\ huellas\ beige.webp);
 }
 
-.pagos {
+.petshopPagos {
   border-radius: 1rem;
   color: white;
-  background-color: radial-gradient(rgb(53, 54, 54), rgb(156, 156, 156));
+  background-image: radial-gradient(rgb(53, 54, 54), rgb(156, 156, 156));
+}
+
+.petshopDescripcion {
+  font-weight: 600;
 }
 
 #seccionPrincipalServicios h3 {
-  color: rgb(46, 131, 88);
+  color: rgb(66, 64, 64);
   text-decoration: dashed;
 }
 
