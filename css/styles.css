@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*--Colores--*/
+/*--Mapas--*/
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +91,6 @@ footer {
   margin-bottom: 1px;
 }
 #cajaFooter a {
-  position: fixed;
   bottom: 5vw;
   right: 3vw;
 }
@@ -99,6 +99,32 @@ footer {
 }
 #cajaFooter ul {
   line-height: 1.5rem;
+}
+
+.logoWhatsapp {
+  position: fixed;
+  bottom: 5vw;
+  right: 3vw;
+}
+
+.logoInstagram, .logoFacebook {
+  background-color: #f0ddfc;
+  border-radius: 1rem;
+}
+.logoInstagram:hover, .logoFacebook:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.logoFacebook {
+  background-color: #9fbbf7;
+}
+
+.logoinstagram {
+  background: #f0ddfc;
+}
+
+.logofacebook {
+  background: #9fbbf7;
 }
 
 button {
@@ -177,6 +203,12 @@ button:hover {
 #seccionPrincipalServicios h3 {
   color: rgb(66, 64, 64);
   text-decoration: dashed;
+}
+
+div h3 {
+  background-color: #f8ead9;
+  text-align: center;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

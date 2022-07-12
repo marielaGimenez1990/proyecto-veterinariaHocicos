@@ -80,8 +80,7 @@ h2{
         text-align: justify;
         position: relative;
         margin-bottom: 1px; 
-        a{
-        position:fixed;
+        a {
         bottom: 5vw;
         right: 3vw;
         }
@@ -93,3 +92,31 @@ h2{
         line-height: 1.5rem;   
         }
     }  
+
+.logoWhatsapp {
+    position:fixed;
+    bottom: 5vw;
+    right: 3vw;
+}
+
+.logoInstagram{
+    background-color: map-get($redes, "instagram");
+    border-radius: 1rem;
+    &:hover{
+    transform: scale(1.5,1.5);
+    }
+}
+
+.logoFacebook{
+    @extend .logoInstagram;
+    background-color: map-get($redes, "facebook");
+}
+
+
+@each $red, $color in $redes {
+    .logo#{$red} {
+            background: $color;
+    }
+}
+
+
