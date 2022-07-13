@@ -127,12 +127,17 @@ footer {
   background: #9fbbf7;
 }
 
-button {
+.button, .btn {
   border: rgb(111, 0, 255) solid 2px;
 }
-button:hover {
+.button:hover, .btn:hover {
   background-color: rgb(240, 167, 79);
   color: white;
+}
+
+.btn {
+  background-color: rgb(46, 131, 88);
+  justify-content: space-around;
 }
 
 .card {
@@ -140,8 +145,12 @@ button:hover {
   border-width: 0.3rem;
   border-color: rgb(240, 167, 79);
 }
-.card-tittle {
+.cardTittle {
   color: rgb(46, 131, 88);
+}
+
+.indexContacto > iframe {
+  height: 350px;
 }
 
 .blog {
@@ -149,6 +158,23 @@ button:hover {
   text-align: justify;
 }
 
+/*-- Mixin y condicional--*/
+@media screen and (max-width: 991px) {
+  .nav img {
+    width: 89px;
+    height: 89px;
+    border-radius: 65px;
+    border-radius: 0.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  nav img {
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    border-radius: 0.5rem;
+  }
+}
 .serviosIncluidos li {
   text-align: justify;
   padding-bottom: 0.5rem;
@@ -187,7 +213,8 @@ button:hover {
 }
 
 .mainPet {
-  background-image: url(../img/Fondo\ huellas\ beige.webp);
+  background-image: url("../img/fondo Huellas beige.jpg");
+  z-index: -10;
 }
 
 .petshopPagos {
@@ -200,6 +227,13 @@ button:hover {
   font-weight: 600;
 }
 
+#chapitas .chapitasEncargo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #seccionPrincipalServicios h3 {
   color: rgb(66, 64, 64);
   text-decoration: dashed;
@@ -209,6 +243,10 @@ div h3 {
   background-color: #f8ead9;
   text-align: center;
   padding: 1rem;
+}
+
+.seccionPeluqueria a {
+  color: rgb(66, 64, 64);
 }
 
 /*# sourceMappingURL=styles.css.map */

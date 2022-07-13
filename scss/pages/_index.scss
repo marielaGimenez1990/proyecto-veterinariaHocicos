@@ -1,6 +1,48 @@
+.indexContacto>iframe{
+        height: 350px;
+}
+
+
+
 
 .blog {
         background-color: $color-terciario;
         text-align: justify;
 }  
+
+
+
+/*-- Mixin y condicional--*/
+
+@mixin logoNav($size,$radius:0){
+        width: $size;
+        height: $size;
+
+        @if $radius !=0{
+        border-radius: $radius;
+        }
+}
+
+@media screen and (max-width: 991px){
+
+        .nav img {
+                @include logoNav(89px, 65px);
+                border-radius: 0.5rem;
+        }
+                
+}
+
+@media screen and (min-width: 992px){
+
+        nav img {
+                @include logoNav(50%, 100%);
+                border-radius: 0.5rem;
+                }
+
+}
+
+
+
+
+
 
