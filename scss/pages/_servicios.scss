@@ -1,4 +1,8 @@
 
+#mainServicios{
+    @extend .contenedor;
+}
+
 #seccionPrincipalServicios h3{
     color: $color-grisoscuro;
     text-decoration: dashed;

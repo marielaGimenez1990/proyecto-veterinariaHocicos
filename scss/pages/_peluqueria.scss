@@ -1,3 +1,7 @@
+#mainPeluqueria{
+    @extend .contenedor;
+}
+
 .serviosIncluidos li{
     text-align: justify;
     padding-bottom: 0.5rem;
@@ -29,6 +33,11 @@
     }
 
 }
+
+.serviosIncluidos{
+    background-color: $color-titulos2;
+}
+
 
 @media screen and (max-width: 991px){
 
