@@ -6,6 +6,9 @@ a {
     border-color: $color-grisoscuro;
     border-radius: 0.2rem;
     transform: scale(1.2, 1.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
     &:link { 
         text-decoration:none; color: white; 
@@ -80,23 +83,20 @@ h2{
     
     #cajaFooter {
         padding: 2vw;
-        margin-right: 20vw;
-        margin-left: 5vw;
-        text-align: justify;
+        margin-right: 5vw;
         position: relative;
         margin-bottom: 1px; 
         a {
-        bottom: 5vw;
-        right: 3vw;
+            bottom: 5vw;
+            right: 3vw;
         }
         p{
         line-height: 0.7rem;
-
         }
         ul{
         line-height: 1.5rem;   
         }
-    }  
+}  
 
 .logoWhatsapp {
     position:fixed;
@@ -124,4 +124,9 @@ h2{
     }
 }
 
+
+P::selection {
+    color: $color-grisoscuro;
+    background-color: $color-secundario;
+} 
 

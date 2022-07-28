@@ -8,10 +8,25 @@
         margin: 10px;
 }
 
+#nosotras-1 P::first-letter{
+        font-size: 130%;
+        float:inline-start;
+} 
+
+
+.indexContacto{
+        display:flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+        &>h2{
+                z-index: 0;
+        }
+}
+
 .indexContacto>iframe{
         height: 350px;
 }
-
 
 
 
@@ -21,6 +36,18 @@
         border-radius: 4px;
 }  
 
+
+.blog a {
+        &:hover{
+        background: #f0dfc6;
+        color: $color-terciario;
+        border-color: $color-grisoscuro;
+        border-radius: 0.2rem;
+        transform: scale(1.2, 1.2);
+        padding: 2px;
+        display: inline-block;
+        }
+}   
 
 
 /*-- Mixin y condicional--*/
@@ -43,6 +70,8 @@
                 
 }
 
+
+
 @media screen and (min-width: 992px){
 
         .logoPrincipal {
@@ -52,7 +81,65 @@
 
 }
 
+/*---APLICANDO GRIDS---*/
 
+#cajaFooter {
+        display: grid;
+        grid-template-columns: 30% 30% 20% 20%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "contacto servicios mapa ."; 
+        grid-auto-flow: row;
+        gap: 10px 10px;
+        padding: 30px;
+        } 
 
+        .footerContacto {
+                grid-area: contacto;
+        } 
+        
+        .footerServicios {
+                grid-area: servicios;
+        } 
 
+        .footerMapa {
+                grid-area: mapa;
+        } 
+        
+        
 
+#cajaFooter a {
+        &:hover{
+        background: #f0dfc6;
+        color: $color-terciario;
+        border-color: $color-grisoscuro;
+        border-radius: 0.2rem;
+        transform: scale(1.2, 1.2);
+        display: inline-block;
+        }
+}
+
+#cajaFooter p{
+        line-height: 1rem;
+
+}  
+
+.parrafoWhatsapp a{
+        color:black;
+        background-color: $color-titulos2;
+        opacity: 90%;
+        font-weight: 200;
+        border-radius: 10px;
+        border-width: 1px;
+        font-size: larger;
+}
+
+@media screen and (max-width: 992px){
+
+        #cajaFooter {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                }
+
+}
