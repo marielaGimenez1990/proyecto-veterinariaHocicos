@@ -71,7 +71,6 @@ h2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }   
 
-
     footer {
         background-color: $color-footer;
         color: white;
@@ -130,3 +129,66 @@ P::selection {
     background-color: $color-secundario;
 } 
 
+/*---APLICANDO GRIDS---*/
+
+#cajaFooter {
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "contacto servicios mapa ."; 
+    grid-auto-flow: row;
+    gap: 10px 10px;
+    padding: 30px;
+    } 
+
+    .footerContacto {
+            grid-area: contacto;
+    } 
+    
+    .footerServicios {
+            grid-area: servicios;
+    } 
+
+    .footerMapa {
+            grid-area: mapa;
+    } 
+    
+    
+
+#cajaFooter a {
+    &:hover{
+    background: #f0dfc6;
+    color: $color-terciario;
+    border-color: $color-grisoscuro;
+    border-radius: 0.2rem;
+    transform: scale(1.2, 1.2);
+    display: inline-block;
+    }
+}
+
+#cajaFooter p{
+    line-height: 1rem;
+
+}  
+
+.parrafoWhatsapp a{
+    color:black;
+    background-color: $color-titulos2;
+    opacity: 90%;
+    font-weight: 200;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: larger;
+    padding: 5px;
+}
+
+@media screen and (max-width: 992px){
+
+    #cajaFooter {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            }
+
+}

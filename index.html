@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -30,9 +30,9 @@
 
 <body class="indexBody">
 
-    <!--Titulo y nav-->
+<!--Titulo y nav-->
 
-    <!-- Header-->
+<!-- Header-->
 
     <header class="navBackground ">
         
@@ -79,38 +79,45 @@
             
             <!--Seccion principal-->
             <section id="imagenPrincipal" class="p-0 m-0">
-                <img src="./img/indexPrincipalv1.jpg" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="img-fluid w-100" alt="Imagen Principal de Inicio"> </img>
+                <picture>
+                <source media="(min-width:1300px)" srcset="./img/indexPrincipalv1large.jpg" /> 
+                <source media="(min-width:1000px)" srcset="./img/indexPrincipalv1medium.jpg" /> 
+                <img src="./img/indexPrincipalv1.jpg" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="img-fluid w-100" alt="Imagen Principal de Inicio"/>
+                </picture> 
+
             </section>
 
             <!--Seccion Nosotras-->
             <section id="seccionNosotras">
                 <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="mt-2 text-center p-1">NOSOTRAS</h2>
-            <div class="row">
-                <div class="col-12 col-md-8 p-0" id="nosotras-1">
-                <p  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500" class="ms-4 my-4 fw-semibold fs-5">Nuestra misión es ofrecer la máxima calidad profesional en el cuidado de la salud de tus mascotas, acompañándolos de la mejor manera en cada etapa de sus vidas. Desde 1997 nuestra veterinaria brinda la mejor atención para tu mascota, incorporando los mejores profesionales veterinarios, quienes continúan en capacitación y formación constante, en pos de brindar mayor calidad del servicio a tu mascota. Así también, queremos dejarlos lo más coquetos posibles. Brindamos los siguientes servicios: </p>
-                <ul data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="3000" class="nosotrasLista ms-5 fw-semibold fs-5">
-                    <li>Atención clínica</li>
-                    <li>Estudios</li>
-                    <li>Cirugías generales</li>
-                    <li>Peluquería canina</li>
-                </ul>
                 
-                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8 p-0" id="nosotras-1">
+                    <p  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500" class="px-4 mx-0 my-4 fw-semibold fs-5">Nuestra misión es ofrecer la máxima calidad profesional en el cuidado de la salud de tus mascotas, acompañándolos de la mejor manera en cada etapa de sus vidas. Desde 1997 nuestra veterinaria brinda la mejor atención para tu mascota, incorporando profesionales veterinarios calificados, quienes continúan en capacitación y formación constante, en pos de brindar mayor calidad del servicio a tu mascota. Así también, queremos dejarlos lo más coquetos posibles. Brindamos los siguientes servicios: </p>
+                    <ul data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="3000" class="nosotrasLista ms-5 fw-semibold fs-5">
+                        <li>Atención clínica</li>
+                        <li>Estudios</li>
+                        <li>Cirugías generales</li>
+                        <li>Peluquería canina</li>
+                    </ul>
+                    </div>
                 
-                <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center" >
+                    <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-5" >
                     <h3 class="m-0" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500" >TURNOS PELUQUERÍA CANINA</h3>
                     <p class="p-2 m-0 text-center fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500" >Baños y cortes de pelo para perros de Martes a Sábados </p>
                     <a href="https://wa.me/541141760466" target="blank"><button type="button" class="btn btn-secondary fs-4 lh-sm" disabled data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500" >Envía un whatsapp para tener tu turno aquí!</button> </a>
+
+                    </div>
                 </div>
             </section>
         </div>
         
         <div class="container-fluid">       
+            
             <div class="row ">
 
             <!--Seccion Contacto-->
             <section class="col-12 col-md-8 p-2 indexContacto">
-
                 <div class="contactoSoloIndex">
                 <h2 class="text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000"> CONTACTO </h2>
                 <p class="fw-semibold fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500">Nos podés encontrar de Lunes a Sábados en Av. Gaona 2009, Ramos Mejía, Buenos Aires. Atendemos por orden de llegada, excepto estudios o cirugías programadas.</p>
@@ -124,6 +131,7 @@
         <!--Seccion Horarios-->
                 <div class="horariosIndex">
                 <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="p-1 mt-3 text-center">NUESTROS HORARIOS</h2>
+                
                 <!-- TABLA DE HORARIOS  -->
 
                 <table class="table text-center tableHorarios" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000"> 
@@ -178,38 +186,47 @@
 
                 </table>
                 </div>
+
+                <div class="petshopIndex">
+                    <div>
+                    <img src="./img/petshopIndex1.jpg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class=" img-fluid  border border-success ms-1 w-100" alt="Perro va de compras"> </img>
+                    </div>
+                    <div class="petshopIndexBoton">
+                    <h4 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">PET SHOP HOCICOS</h4>
+                    <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="text-center fw-semibold fs-5">Visitá la sección Petshop para más información. En la misma encontrarás todo lo que buscás para tu mascota, desde alimentos collares, camas y otros accesorios para perros, gatos, peces, entre otros. </p>
+                    <a href="./pages/petshop.html" target="blank"><button type="button" class="btn btn-secondary fs-4 lh-sm" disabled data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" >Visitar Pet Shop </button> </a>
+
+                    </div>
+                    
+                </div>
             </section>
 
-            <section class="col-12 col-md-4 p-2 blog" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+            <section class="col-12 col-md-4 p-2 blog" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
         <!--Tips y novedades para tus mascotas-->
 
                 <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="p-1 ">BLOG MASCOTERO</h2>
                 
-                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2100">
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
                     <p class="tblanco fs-5" > - Pequeña gatita y gran perro son mejores amigos: </p>
                     <iframe class="w-100" height="300" src="https://www.youtube.com/embed/GmmBOXvBD9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Amistad entre perro y gato en el Blog"></iframe>
                 </div>
 
-                <p class="tblanco fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2200">- Caso Coco: ¿cuáles son los requisitos para ingresar perros y gatos al país? <a 
-                href="https://tn.com.ar/sociedad/2022/05/26/caso-coco-cuales-son-los-requisitos-para-ingresar-perros-y-gatos-al-pais/" target="blank"> Más info</a> </p> <img src="./img/BlogCasococo.jpeg" class="w-100" alt="Caso Coco en el Blog" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2200">
+                <p class="tblanco fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">- Caso Coco: ¿cuáles son los requisitos para ingresar perros y gatos al país? <a 
+                href="https://tn.com.ar/sociedad/2022/05/26/caso-coco-cuales-son-los-requisitos-para-ingresar-perros-y-gatos-al-pais/" target="blank"> Más info</a> </p> <img src="./img/BlogCasococo.jpeg" class="w-100" alt="Caso Coco en el Blog" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
 
                 </p>
 
-                <p class="tblanco fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2300">- Mascotas: ¿hay que abrigar a perros y a gatos? <a
-                href="https://www.lavoz.com.ar/ciudadanos/mascotas-hay-que-abrigar-a-perros-y-gatos/" target="blank"> Más info</a> </p> <img src="./img/BlogAbrigarpyg.jpg" class="w-100" alt="Información sobre abrigos en el Blog" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2300">
+                <p class="tblanco fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">- Mascotas: ¿hay que abrigar a perros y a gatos? <a
+                href="https://www.lavoz.com.ar/ciudadanos/mascotas-hay-que-abrigar-a-perros-y-gatos/" target="blank"> Más info</a> </p> <img src="./img/BlogAbrigarpyg.jpg" class="w-100" alt="Información sobre abrigos en el Blog" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
 
-                <p class="tblanco fs-5 mt-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2400">- Viruela del mono y mascotas: todo lo que debes saber <a
-                    href="https://wakyma.com/blog/viruela-del-mono-mascotas/" target="blank"> Más info</a> </p> <img src="./img/BlogVirueladelmono.jpg" class="w-100" alt="Viruela del mono en el Blog" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2400">
+            </div>
         </div>
-
 
     </main>
 
     <!-- Footer-->
 
     <footer>
-
-
     <section ID="cajaFooter">
 
         <div class="footerContacto">
@@ -223,8 +240,6 @@
             </a>
             <a href="https://www.facebook.com/" target="blank"><img src="./img/iconoFacebook.png" alt="Ícono de Facebook" class="logoFacebook">
             </a>
-            
-        
         </div>
 
         <div class="footerServicios">
@@ -244,7 +259,6 @@
         </div>
     </section>
 
-
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -257,13 +271,3 @@
 </body>
 
 </html>
-
-
-<!-- <picture>
-    <source media="(min-width:1300px)" srcset="./imagenPrincipal" /> large
-
-    <source media="(min-width:1000px)" srcset="./imagenPrincipal" /> medium
-
-    <img src="./img/4 perros escondidos.jpg" alt=""/>
-
-</picture> -->
