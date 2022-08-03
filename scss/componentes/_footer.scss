@@ -1,0 +1,121 @@
+footer {
+    background-color: $color-footer;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1rem;
+    padding-left: 0.5rem;
+    background-image: linear-gradient(rgb(37, 37, 37) , rgb(87, 87, 86));
+}  
+
+#cajaFooter {
+
+    margin-right: 10vw;
+    margin-left: 10vw;
+    position: relative;
+    margin-bottom: 1px; 
+    a {
+        bottom: 5vw;
+        right: 3vw;
+    }
+    p{
+    line-height: 0.7rem;
+    }
+    ul{
+    line-height: 1.5rem;   
+    }
+}  
+
+.logoWhatsapp {
+position:fixed;
+bottom: 1vw;
+right: 3vw;
+}
+
+.logoInstagram{
+background-color: map-get($redes, "instagram");
+border-radius: 1rem;
+&:hover{
+transform: scale(1.5,1.5);
+}
+}
+
+.logoFacebook{
+@extend .logoInstagram;
+background-color: map-get($redes, "facebook");
+}
+
+
+@each $red, $color in $redes {
+.logo#{$red} {
+        background: $color;
+}
+}
+
+/*---APLICANDO GRIDS---*/
+
+#cajaFooter {
+    display: grid;
+    grid-template-columns: 40% 30% 30% ;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "contacto servicios mapa "; 
+    grid-auto-flow: row;
+    gap: 10px 10px;
+    padding: 30px;
+
+    } 
+
+    #cajaFooter iframe{
+    height: 180px;
+    } 
+
+    .footerContacto {
+            grid-area: contacto;
+    } 
+    
+    .footerServicios {
+            grid-area: servicios;
+    } 
+
+    .footerMapa {
+            grid-area: mapa;
+    } 
+    
+    
+
+#cajaFooter a {
+    &:hover{
+    background: #f0dfc6;
+    color: $color-terciario;
+    border-color: $color-grisoscuro;
+    border-radius: 0.2rem;
+    transform: scale(1.2, 1.2);
+    display: inline-block;
+    }
+}
+
+#cajaFooter p{
+    line-height: 1rem;
+
+}  
+
+.parrafoWhatsapp a{
+    color:black;
+    background-color: $color-titulos2;
+    opacity: 90%;
+    font-weight: 200;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: larger;
+    padding: 5px;
+}
+
+@media screen and (max-width: 992px){
+
+    #cajaFooter {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            }
+
+}

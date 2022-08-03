@@ -11,8 +11,11 @@ h1 {
   font-family: "Libre Baskerville", serif;
 }
 
+nav a:hover {
+  background-color: #fcddb5;
+}
+
 a:hover {
-  background: #f0dfc6;
   color: rgb(46, 131, 88);
   border-color: rgb(66, 64, 64);
   border-radius: 0.2rem;
@@ -86,14 +89,14 @@ footer {
   background-color: rgb(56, 56, 54);
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.2rem;
+  line-height: 1rem;
   padding-left: 0.5rem;
   background-image: linear-gradient(rgb(37, 37, 37), rgb(87, 87, 86));
 }
 
 #cajaFooter {
-  padding: 2vw;
-  margin-right: 5vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
   position: relative;
   margin-bottom: 1px;
 }
@@ -110,7 +113,7 @@ footer {
 
 .logoWhatsapp {
   position: fixed;
-  bottom: 5vw;
+  bottom: 1vw;
   right: 3vw;
 }
 
@@ -137,12 +140,16 @@ footer {
 /*---APLICANDO GRIDS---*/
 #cajaFooter {
   display: grid;
-  grid-template-columns: 30% 30% 20% 20%;
+  grid-template-columns: 40% 30% 30%;
   grid-template-rows: 100%;
-  grid-template-areas: "contacto servicios mapa .";
+  grid-template-areas: "contacto servicios mapa ";
   grid-auto-flow: row;
   gap: 10px 10px;
   padding: 30px;
+}
+
+#cajaFooter iframe {
+  height: 180px;
 }
 
 .footerContacto {
@@ -248,6 +255,29 @@ h3 {
   float: inline-start;
 }
 
+.indexTurnos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indexTurnos > a {
+  background-color: #f8ead9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  border-style: solid;
+}
+.indexTurnos > a:hover {
+  flex-direction: column;
+  background-color: #f8ead9;
+  transform: scale(1.1, 1.1);
+}
+.indexTurnos > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*--Contacto en Sección Inicio--*/
 .indexContacto {
   display: flex;
@@ -267,11 +297,14 @@ h3 {
 .petshopIndex {
   display: flex;
   justify-content: space-around;
+  border-color: rgb(197, 195, 195);
+  border-width: 2px;
+  border-radius: 5px;
+  border-style: dashed;
   background-color: rgb(240, 240, 240);
   padding: 10px;
-  border-radius: 5px;
   align-items: center;
-  background-image: url("../img/fondo Huellas beige.jpg");
+  background-image: url("../img/fondo Huellas beige1.jpeg");
 }
 .petshopIndex > a:hover {
   background: none;
@@ -285,7 +318,6 @@ h3 {
 .petshopIndex > h4 {
   color: rgb(46, 131, 88);
   text-align: center¿;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .petshopIndex img {
@@ -296,8 +328,15 @@ h3 {
   display: flex;
   justify-content: space-around;
 }
+.petshopIndex img:hover {
+  color: white;
+}
 
-.petshopIndexBoton a {
+.petshopIndexBoton > p {
+  background-color: white;
+  margin-left: 40px;
+}
+.petshopIndexBoton > a {
   display: inline-block;
 }
 
@@ -363,7 +402,7 @@ h3 {
 }
 
 #mainPet {
-  background-image: url("../img/fondo Huellas beige.jpg");
+  background-image: url("../img/fondo Huellas beige1.jpg");
   z-index: -10;
 }
 

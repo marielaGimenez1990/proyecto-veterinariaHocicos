@@ -14,6 +14,33 @@
         float:inline-start;
 } 
 
+.indexTurnos{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &>a{
+                background-color:  #f8ead9;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-radius: 10px;
+                border-style: solid;
+
+        }
+        &>a:hover{
+                
+                flex-direction: column;
+                background-color:  #f8ead9;
+                transform: scale(1.1, 1.1);
+
+                }
+        &>button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+}
+
+
 /*--Contacto en Sección Inicio--*/
 .indexContacto{
         display:flex;
@@ -33,11 +60,14 @@
 .petshopIndex{
         display: flex;
         justify-content: space-around;
+        border-color: $color-bordes;
+        border-width: 2px;
+        border-radius: 5px;
+        border-style:dashed;
         background-color: rgb(240, 240, 240);
         padding: 10px;
-        border-radius: 5px;
         align-items: center;
-        background-image: url("../img/fondo Huellas beige.jpg");
+        background-image: url("../img/fondo Huellas beige1.jpeg");
         &>a:hover{
                 background: none;
         }
@@ -50,7 +80,6 @@
         &>h4{
                 color: $color-terciario;
                 text-align: center¿;
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 }      
         
 }
@@ -62,10 +91,19 @@
         align-items: center;
         display: flex;
         justify-content: space-around;
+        &:hover{
+                color: white;
+        }
 }
 
-.petshopIndexBoton a{
+.petshopIndexBoton{
+        &>p{
+                background-color: white;
+                margin-left: 40px;
+        }
+        &>a{
         display: inline-block;
+        }
 }
 
 /*--Blog en Sección Inicio--*/

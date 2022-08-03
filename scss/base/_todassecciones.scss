@@ -1,7 +1,12 @@
 
+nav a {
+    &:hover{
+    background-color: #fcddb5;
+    }
+}
+
 a {
     &:hover{
-    background: #f0dfc6;
     color: $color-terciario;
     border-color: $color-grisoscuro;
     border-radius: 0.2rem;

@@ -1,0 +1,45 @@
+
+
+/*-- Mixin y condicional--*/
+
+@mixin logoNav($size,$size1,$radius:0){
+        width: $size;
+        height: $size1;
+
+        @if $radius !=0{
+        border-radius: $radius;
+        }
+}
+
+@media screen and (max-width: 991px){
+
+        .logoPrincipal {
+                @include logoNav(100px, 100%);
+                border-radius: 0.5rem;
+                padding: 4px;
+        }
+
+        .logoSecciones{
+                @include logoNav(100px, 100%);
+                border-radius: 0.5rem;
+                padding: 4px;
+        }
+                
+}
+
+@media screen and (min-width: 992px){
+
+        .logoPrincipal {
+                @include logoNav(120px, 100%);
+                border-radius: 0.5rem;
+                padding: 4px;
+                }
+
+        .logoSecciones{
+                @include logoNav(120px, 100%);
+                border-radius: 0.5rem;
+                padding: 4px;
+                }
+
+}
+
