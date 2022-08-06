@@ -198,13 +198,13 @@ footer {
 /*-- Mixin y condicional--*/
 @media screen and (max-width: 991px) {
   .logoPrincipal {
-    width: 100px;
+    width: 120px;
     height: 100%;
     border-radius: 0.5rem;
     padding: 6px;
   }
   .logoSecciones {
-    width: 100px;
+    width: 120px;
     height: 100%;
     border-radius: 0.5rem;
     padding: 6px;
@@ -212,24 +212,25 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .logoPrincipal {
-    width: 120px;
+    width: 140px;
     height: 100%;
     border-radius: 0.5rem;
     padding: 6px;
   }
   .logoSecciones {
-    width: 120px;
+    width: 140px;
     height: 100%;
     border-radius: 0.5rem;
     padding: 6px;
   }
 }
-.recuadros, .indexTurnos > a {
+.recuadros, .turnosPeluqueria, .indexTurnos > a {
   background-color: #f8ead9;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
   border-style: solid;
+  border-color: rgb(197, 195, 195);
 }
 
 h2 {
@@ -361,34 +362,62 @@ h3 {
   display: inline-block;
 }
 
-.serviosIncluidos li {
+.serviosIncluidos {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviosIncluidos .card-body {
   text-align: justify;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .accordion-item {
-  background-color: rgb(46, 131, 88);
-  color: white;
+  background-color: rgb(231, 219, 235);
+  color: rgb(66, 64, 64);
 }
 
-.peluqueriaImg img {
+.accordion-button {
+  background-color: #f8ead9;
+}
+
+.turnosPeluqueria > h4 {
+  color: rgb(96, 54, 109);
+}
+.turnosPeluqueria > p {
+  line-height: 0.5;
+}
+
+.turnosPeluqueria button {
+  background-color: rgb(66, 64, 64);
+  color: #f0dfc6;
   border-radius: 10px;
+  border-color: #f0dfc6;
+}
+
+.peluqueriaImg {
+  display: flex;
+}
+.peluqueriaImg > img {
+  border-radius: 10px;
+  align-self: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 992px) {
-  .preguntasFrecuentes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
   #preguntasFrecuentes h2 {
     text-align: center;
   }
 }
 .serviosIncluidos {
-  background-color: rgb(231, 219, 235);
+  background-color: rgb(238, 225, 243);
+  border-radius: 10px;
+  background-color: opacity 50%;
 }
 
 @media screen and (max-width: 991px) {
@@ -462,8 +491,8 @@ div h3 {
 }
 
 .unionCajasServicios div a {
-  background-color: rgb(197, 195, 195);
-  color: #fcddb5;
+  background-color: rgb(66, 64, 64);
+  color: #f0dfc6;
   border-radius: 10px;
 }
 

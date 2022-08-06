@@ -2,30 +2,61 @@
     @extend .contenedor;
 }
 
-.serviosIncluidos li{
+.serviosIncluidos { 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.serviosIncluidos .card-body{
     text-align: justify;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .accordion-item{
-    background-color: $color-terciario;
-    color: white;
+    background-color: $color-titulos2;
+    color: $color-grisoscuro;
 }
 
+.accordion-button{
+    background-color: #f8ead9;
+}
 
-.peluqueriaImg img {
+.turnosPeluqueria {
+    @extend .recuadros;
+    &>h4{
+        color: $color-titulos3;
+    }
+    &>p{
+        line-height: 0.5;
+    }
+    
+}
+
+.turnosPeluqueria button{
+    background-color: $color-grisoscuro;
+    color: $color-hover;
     border-radius: 10px;
+    border-color: $color-hover;
 }
+
+.peluqueriaImg{
+    display: flex;
+    &>img{
+        border-radius: 10px;
+        align-self: center;
+        justify-content: center;    
+    }
+
+}
+
 
 @media screen and (min-width: 992px){
-
-    .preguntasFrecuentes {
-    display: flex;   
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    }
     
 #preguntasFrecuentes 
     h2{
@@ -35,7 +66,9 @@
 }
 
 .serviosIncluidos{
-    background-color: $color-titulos2;
+    background-color: rgb(238, 225, 243);
+    border-radius: 10px;
+    background-color: opacity 50%;
 }
 
 
