@@ -56,3 +56,10 @@ P::selection {
     background-color: $color-secundario;
 } 
 
+/*--Base flexbox--*/
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

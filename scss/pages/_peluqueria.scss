@@ -5,18 +5,20 @@
 .serviosIncluidos { 
     display: flex;
     flex-direction: column;
+    background-color: rgb(238, 225, 243);
+    border-radius: 10px;
+    background-color: opacity 50%;
 
 }
 
 .serviosIncluidos .card-body{
+    @extend .flexbox;
     text-align: justify;
-    display: flex;
     flex-direction: column;
     padding-bottom: 0.5rem;
-    align-items: center;
-    justify-content: center;
     align-self: center;
 }
+
 
 .accordion-item{
     background-color: $color-titulos2;
@@ -33,7 +35,7 @@
         color: $color-titulos3;
     }
     &>p{
-        line-height: 0.5;
+        line-height: 1;
     }
     
 }
@@ -43,6 +45,9 @@
     color: $color-hover;
     border-radius: 10px;
     border-color: $color-hover;
+    &:hover{
+        transform: scale (1, 1);
+    }
 }
 
 .peluqueriaImg{
@@ -62,22 +67,56 @@
     h2{
         text-align: center;
     }
-
 }
 
-.serviosIncluidos{
-    background-color: rgb(238, 225, 243);
-    border-radius: 10px;
-    background-color: opacity 50%;
-}
 
+
+@media screen and (min-width: 992px) and (max-width: 1399px){
+    
+    .principalPeluqueria{
+        display: grid;
+        grid-template-columns: 70% 30% ;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "nuestramascota turnos "; 
+        grid-auto-flow: row;
+        gap: 10px 10px;
+        padding: 30px;
+    }
+
+    .nuestraMascota{
+        grid-area: nuestramascota;
+    }
+    
+    .turnosPeluqueria{
+        grid-area: turnos;
+    }
+
+    }
 
 @media screen and (max-width: 991px){
 
     .peluqueriaImg {
         width: 98%;
     }
+
+    .principalPeluqueria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     
+    }
+
+    @media screen and (min-width: 1400px){
+
+    .principalPeluqueria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
     }
 
     
