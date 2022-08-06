@@ -29,17 +29,17 @@
         
         <nav class="navbar navbar-expand-lg bg-light ">
             
-            <a class="navbar-brand" href="#"><img src="../img/headLogo.jpg" alt="Logo del Navegador" class="logoSecciones" data-aos="fade-right"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../img/headLogo.jpg" alt="Logo del Navegador" class="logoSecciones" data-aos="fade-right"></a>
 
             <h1 class="fw-bold text-center fs-1 tblanco p-1">VETERINARIA HOCICOS</h1>
             <h3 class="fw-bold text-center tblanco text-decoration-none p-3 fs-4">Nuestros servicios</h3>
-            <div class="container">
+            <div class="container p-0">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation" >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse border-bottom justify-content-end" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse border-bottom justify-content-end px-0" id="navbarNavDropdown">
                     <ul class="navbar-nav fw-semibold">
                         <li class="nav-item ">
                             <a class="nav-link active fs-5" aria-current="page" href="../index.html">Inicio</a>
@@ -67,33 +67,33 @@
     <!-- Main-->
     <main id="mainServicios" class="container-fuid">
 
-        <section class="cajaPrincipalServicios">
+        <section class="cajaPrincipalServicios mb-3">
             <!--Seccion Nosotras-->
             <div id="seccionNosotras">
                 <div class="row">
                     
-                    <div id="seccionPrincipalServicios" class="col-12 col-md-6 p-0 d-flex flex-column justify-content-center align-items-center">
-                        <img src="../img/indexPrincipal5.jpg" class="card-img-top " alt="Imagen principal de la sección servicios"  data-aos="zoom-out-down">
-                        <h3 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> - Dra. Silvina Marinelli -</h3>
-
+                    <div id="seccionPrincipalServicios" class="col-12 col-md-12 col-xl-8 p-0 d-flex flex-column justify-content-center align-items-center">
+                        <picture alt="Imagen principal de la sección servicios"  data-aos="zoom-out-down" class=" w-100">
+                            <source media="(min-width:1300px)" srcset="../img/serviciosPrincipal5large.jpg"/> 
+                            <source media="(min-width:1000px)" srcset="../img/serviciosPrincipal5medium.jpg"/> 
+                            <img src="../img/serviciosPrincipal5small.jpg" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="img-fluid w-100 h-80" alt="Imagen Principal de Inicio"/>
+                            </picture> 
                     </div>
 
-                    <div class="col-12 col-md-6 ">
-                    <h2 data-aos="flip-left" class="m-2 text-center ">Misión</h2>
-                    <p class="fs-5">Con el objeto de acompañar de la mejor manera cada etapa de la salud de nuestras mascotas, realizamos en cada turno, una atención clínica integral con los mejores profesionales veterinarios, liderados por la Dra. Marinelli, quienes continúan en capacitación y formación constante, para darle la más cálida y profesional atención a tu mascota. 
-                    </p>
-                    <p class="fs-5 seccionPeluqueria">Adicionalmente, ofrecemos el servicio de peluqeria canina que podés consultar en la sección <a href="./peluqueria.html" class="fw-bolder ">PELUQUERÍA</a>.</p>
-                    <a href="https://wa.me/541141760466" target="blank">
-                        <button type="button" class="btn btn-secondary" disabled>Envía un whatsapp para tener tu turno aquí!</button> </a>
-                    </div>
+                    <div class="col-12 col-md-12 col-xl-4 descripcionVeterinaria p-1">
+                        <p class="p-2 m-0 text-center fw-semibold fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500" >"Los animales me han brindado tanta alegría y compañía a lo largo de mi vida que es fantástico poder cuidarlos y devolverles algo", dice la Dra. Marinelli. "Ser veterinaria no es solo atender y curar animales, sino también, generar un vínculo con la familia. Desempeñarse desde hace más de 30 años en el mismo barrio con profesionalidad me ha permitido entablar lazos de amistad con muchos de los dueños de las mascotas. Sin lugar a dudas, la medicina veterinaria se basa en el afecto. Ese vínculo no tiene precio". </p>
+                        <a href="https://wa.me/541141760466" target="blank" class="fw-semibold fs-4 p-1 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500" >- Dra. Silvina Marinelli -</a>
+                        <p class="p-2 m-0 text-center fw-semibold fs-5 " data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500" >Gradudada UBA, Médica Veterinaria </p>
+                </div>
                 </div>
             </div>
         </section>
 
         <!--Nuestros servicios-->
-        <section class="unionCajasServicios pb-2 mt-2">
-            <h2 data-aos="flip-left" class="text-center">NUESTROS SERVICIOS</h2>
-
+        <section class="unionCajasServicios pb-2 my-4">
+            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="p-1 mt-3 text-center" class="text-center my-4">NUESTROS SERVICIOS</h2>
+            <p class="fw-semibold fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">Con el objeto de acompañar de la mejor manera cada etapa de la salud de nuestras mascotas, realizamos en cada turno, una atención clínica integral con los mejores profesionales veterinarios, liderados por la Dra. Marinelli, quienes continúan en capacitación y formación constante, para darle la más cálida y profesional atención a tu mascota. 
+            </p>
             <div class="row justify-content-around">
 
                 <div class="col-12 col-md-4 card m-1" style="width: 25rem;" data-aos="zoom-in"  data-aos-duration="1000">
@@ -115,8 +115,15 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">CIRUGÍAS</h5>
                         <p class="card-text fs-5">Cirugías generales, como castraciones, limpieza y extracción de dientes laparotomías exploratorias, cirugías oncológicas e intervenciones traumatológicas, torácicas y gastrointestinales.</p>
-
                     </div>
+                </div>
+                <div class="col-12 col-md-4 card m-1" style="width: 25rem;" data-aos="zoom-in"  data-aos-duration="3000">
+                        <img src="../img/serviciosPeluqueria.jpg" class="card-img-top w-100" alt="Servicio de peluqueria">
+                        <div class="card-body d-flex align-items-center flex-column">
+                            <h5 class="card-title text-center">PELUQUERIA</h5>
+                            <p class="card-text fs-5 ">Incluye Baño, corte según la raza o pelo, corte higiénico y corte de uñas. Para más información, vista nuestra sección "Peluqueria".</p>
+                            <a href="../pages/peluqueria.html" class="p-1 fw-semibold fs-4 px-2" >Ir a sección Peluqueria</a>
+                        </div>
                 </div>
             </div>    
         </section>

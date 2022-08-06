@@ -16,13 +16,13 @@
         .logoPrincipal {
                 @include logoNav(100px, 100%);
                 border-radius: 0.5rem;
-                padding: 4px;
+                padding: 6px;
         }
 
         .logoSecciones{
                 @include logoNav(100px, 100%);
                 border-radius: 0.5rem;
-                padding: 4px;
+                padding: 6px;
         }
                 
 }
@@ -32,13 +32,13 @@
         .logoPrincipal {
                 @include logoNav(120px, 100%);
                 border-radius: 0.5rem;
-                padding: 4px;
+                padding: 6px;
                 }
 
         .logoSecciones{
                 @include logoNav(120px, 100%);
                 border-radius: 0.5rem;
-                padding: 4px;
+                padding: 6px;
                 }
 
 }

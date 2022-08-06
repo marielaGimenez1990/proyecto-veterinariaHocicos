@@ -3,10 +3,19 @@
     @extend .contenedor;
 }
 
-#seccionPrincipalServicios h3{
+#seccionPrincipalServicios{ 
+    &>h3{
     color: $color-grisoscuro;
     text-decoration: dashed;
+    }
 }
+
+#seccionPrincipalServicios img{
+    border-radius: 10px;
+    border-color: $color-grisoscuro;
+    border-style: solid 4px;
+}
+
 
 
 div h3{
@@ -15,8 +24,28 @@ div h3{
     padding: 1rem;
 }
 
-.seccionPeluqueria a{
-    color: $color-grisoscuro;
+.descripcionVeterinaria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &>a{
+        color:$color-grisoscuro;
+        }
+    &>.descripcionContacto{
+        background-color: none;
+    }
 }
 
+.descripcionVeterinaria a:hover{
+    display:inline-block;
+    color: $color-titulos3;
+    padding-top: 0;
+    background-color: $color-hover;
+}
 
+.unionCajasServicios div a{
+    background-color: $color-bordes;
+    color: $color-secundario;
+    border-radius: 10px;
+}
