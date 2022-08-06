@@ -4,6 +4,7 @@
     border-radius: 1rem;
     border: solid $color-terciario;
     margin-left: 0.2rem;
+    max-height: 830px;
 }
 
 #mainPet{
@@ -23,7 +24,7 @@
     font-weight: 600;
 }
 
-
+/*--Mixin Flex--*/
 @mixin centrado-flex {
     display: flex;
     flex-direction: column;
@@ -35,6 +36,14 @@
 #chapitas .chapitasEncargo {
 
     @include centrado-flex;
+}
+
+#chapitas img{
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: $color-bordes;
+    max-height: 300px;
 }
 
 

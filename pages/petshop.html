@@ -41,7 +41,7 @@
                 aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse border-bottom justify-content-end" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav fw-semibold">
                     <li class="nav-item ">
                         <a class="nav-link active fs-5" aria-current="page" href="../index.html">Inicio</a>
@@ -71,18 +71,19 @@
     <div class="row ">
 
         <!--imagen principal-->
-        <div class="col-12 col-md-8 lg-6 mb-4">
+        <div class="col-12 col-lg-8 mb-4">
             <section class="principalPet">
-                <picture ddata-aos="zoom-out-down" alt="Imagen principal de la sección peluqueria"  data-aos="zoom-out-down" class=" w-100 peluqueriaImg img-fluid ms-1">
+                <picture ddata-aos="zoom-out-down" alt="Imagen principal de la sección peluqueria"  data-aos="zoom-out-down" class=" w-100 peluqueriaImg img-fluid px-1">
                     <source media="(min-width:1300px)" srcset="../img/petshopPrincipalmedium.jpeg"/> 
                     <source media="(min-width:1000px)" srcset="../img/petshopPrincipalmedium.jpeg"/> 
                     <img src="../img/petshopPrincipalsmall.jpg" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="img-fluid w-100 h-80" alt="Imagen Principal de sección Petshop"/>
                     </picture> 
             </section>
         </div>
-        <div class="col-12 col-md-4 lg-6 align-self-center petshopDescripcion">
-            <p> Tenemos todo lo necesario para el confort de su mascota, por lo cual contamos con una amplia gama de alimentos, camas y colchones, collares y otros accesorios para perros y gatos.</p> 
-            <p class="text-center petshopPagos py-4">Aceptamos todas las tarjetas de Débito y Crédito.</p>
+        <div class="col-12 col-lg-4 d-flex flex-column
+        align-items-center align-self-center petshopDescripcion" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500">
+            <p class="fw-semibold fs-5"> Tenemos todo lo necesario para el confort de su mascota, por lo cual contamos con una amplia gama de alimentos, camas y colchones, collares y otros accesorios para perros y gatos.</p> 
+            <p class="text-center petshopPagos fw-semibold fs-5 p-2">Aceptamos todas las tarjetas de Débito y Crédito, efectivo y pagos mediante billeteras virtuales.</p>
         </div>
 
         <!--Productos-->
@@ -99,13 +100,13 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 card m-1 p-1" style="width: 25rem;">
-                <img data-aos="zoom-in" src="../img/petshopCorreas.jpg" class="card-img-top" alt="Correas y collares para perros y gatos">
+                <img data-aos="zoom-in"  data-aos-duration="2000" src="../img/petshopCorreas.jpg" class="card-img-top" alt="Correas y collares para perros y gatos">
                 <div class="card-body">
                 <h5 class="card-title text-center">CORREAS Y COLLARES</h5>
                 </div>
             </div>
             <div class="col-12 col-md-4 card m-1 p-1" style="width: 25rem;">
-                <img data-aos="zoom-in" src="../img/petshopCamas.jpg" class="card-img-top" alt="Camas y colchones para perros y gatos">
+                <img data-aos="zoom-in"  data-aos-duration="2000" src="../img/petshopCamas.jpg" class="card-img-top" alt="Camas y colchones para perros y gatos">
                 <div class="card-body">
                 <h5 class="card-title text-center">CAMAS Y COLCHONES</h5>
                 </div>
@@ -122,27 +123,24 @@
         </section>
 
         <section id="chapitas">
-
+            <h2 class="text-center my-2">Chapitas</h2>
             <div class="row ">
 
-                <div class="col-12 col-md-8 lg-6 mt-2 ">
-                <h2 class="text-center">Chapitas</h2>
-
-                <div class="chapitasEncargo">
-                <p>La identificación y registro de los perros y gatos es una de las estrategias principales para luchar contra el abandono e incrementar las devoluciones de aquellos animales que se han perdido, porque una parte de las mascotas que llegan a los refugios no corresponde a un abandono, sino a una pérdida. </p>
-                <p class="text-uppercase fw-bold"> Las chapitas identificatorias son indispensables a la hora de encontrar a tu perro. Si no la tiene, nadie podrá ayudarlo a volver a casa. </p>
-                <p>Hay muchas opciones para identificar a tu perro y algunas no son tan costosas. Asegúrate de que tu perro siempre tenga puesto su collar y su placa.</p>
-                <a href="https://wa.me/541141760466" target="blank"><button type="button" class="btn btn-secondary" disabled>Encargá la chapita de identificación y tenela en 24 horas</button> </a>
-                </div>
-
-                </div>
-
-                <div class="col-12 col-md-4 lg-6 my-2 d-flex">
-                <img src="../img/petshopChapitas.jpg" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic" alt="Chapitas para identificar mascotas"
-                data-aos-duration="2000" class="mx-auto w-100">
+                <div class="col-12 col-lg-4 mt-2 d-flex align-self-center">
+                    <img src="../img/petshopChapitas.jpg" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic" alt="Chapitas para identificar mascotas"
+                    data-aos-duration="2000" class="w-100 align-self-center">
+                    </div>
+                    <div class="col-12 col-lg-8 my-2 d-flex " >
+                    <div class="chapitasEncargo">
+                    <p class="fw-semibold fs-5"data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500">La identificación y registro de los perros y gatos es una de las estrategias principales para luchar contra el abandono e incrementar las devoluciones de aquellos animales que se han perdido, porque una parte de las mascotas que llegan a los refugios no corresponde a un abandono, sino a una pérdida. </p>
+                    <p class="text-uppercase fw-bold fs-5"data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500"> Las chapitas identificatorias son indispensables a la hora de encontrar a tu perro. Si no la tiene, nadie podrá ayudarlo a volver a casa. </p>
+                    <p class="fw-semibold fs-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500">Hay muchas opciones para identificar a tu perro y algunas no son tan costosas. Asegúrate de que tu perro siempre tenga puesto su collar y su placa.</p>
+                    <a href="https://wa.me/541141760466" target="blank" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500"><button type="button" class="btn btn-secondary fw-semibold fs-5" disabled>Encargá la chapita de identificación y tenela en 24 horas</button> </a>
+                    </div>
 
                 </div>
+
             </div>
 
 
