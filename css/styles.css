@@ -112,7 +112,7 @@ footer {
   right: 3vw;
 }
 #cajaFooter p {
-  line-height: 1.2rem;
+  line-height: 1.4rem;
 }
 #cajaFooter ul {
   line-height: 1.5rem;
@@ -153,7 +153,7 @@ footer {
   grid-template-areas: "contacto servicios mapa ";
   grid-auto-flow: row;
   gap: 10px 10px;
-  padding: 30px;
+  padding: 10px;
 }
 
 #cajaFooter iframe {
