@@ -68,29 +68,29 @@
     <main id="mainContacto" class="container-fuid">
 
         <div class="row  p-2">
-        <section class="col-12 col-md-6" >
-            <h2 data-aos="flip-left" class="text-center mt-1">Contacto</h2>
-            <form>
+        <section class="col-12 col-lg-7" >
+            <h2 class="text-center p-1" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">Contacto</h2>
+            <form data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500">
             <fieldset >
-                <legend>Dejános tu mensaje:</legend>
-                <div class="mb-3">
+                <legend class="fw-semibold fs-5">Dejanos tu mensaje:</legend>
+                <div class="mb-3 fw-semibold fs-5">
                     <label for="disabledTextInput" class="form-label">Nombre:</label>
                     <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombres">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 fw-semibold fs-5">
                     <label for="disabledTextInput" class="form-label">Apellido:</label>
                     <input type="text" id="disabledTextInput" class="form-control" placeholder="Apellido">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 fw-semibold fs-5">
                     <label for="disabledTextInput" class="form-label">Email:</label>
                     <input type="email" id="disabledTextInput" class="form-control" placeholder="ejemplo@mail.com">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 fw-semibold fs-5">
                     <label for="disabledTextInput" class="form-label">Teléfono:</label>
                     <input type="telefono" id="disabledTextInput" class="form-control" placeholder="011-xxxxxxxx">
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-3 fw-semibold fs-5">
                     <label for="disabledSelect" class="form-label">Introduzca su mascota:</label>
                     <select id="disabledSelect" class="form-select" >
                         <option value="1">Perro</option>
@@ -101,43 +101,49 @@
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <label class="form-check-label fw-semibold fs-5" for="flexCheckDefault">
                         ¿Querés suscribirte a las noticias del blog?
                     </label>
                 </div>
 
-                <div>
-                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                <button type="reset" class="btn btn-primary">Borrar formulario</button>
+                <div class="my-2 d-flex justify-content-around contactoBotones">
+                <button type="submit" class="btn btn-primary fw-semibold fs-5">Enviar mensaje</button>
+                <button type="reset" class="btn btn-primary fw-semibold fs-5">Borrar formulario</button>
                 </div>
             </fieldset>
-                <div class="comentarios">
+                <div class="comentarios fw-semibold fs-5 mt-2 d-flex flex-column">
                     <p class="m-0 p-1">Comentarios</p>
-                    <textarea name="" id="" cols="50" rows="10"></textarea>
+                    <textarea name="" id="" cols="45" rows="10" class="align-items-center"></textarea>
                 </div>
             </form>
 
+            <div class="col-12  p-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500">
+                <p class="fw-semibold fs-5 lh-sm"> Para cuidarnos entre tod@s, te recordamos que: </p>
+                <p class="fw-semibold fs-5 lh-sm">❌ No está permitido el ingreso de personas sin elementos de protección de nariz, boca y mentón.</p>
+                <p class="fw-semibold fs-5 lh-sm">✔️ Podrá asistir únicamente una persona por mascota, sin excepción!</p>
+                <p class="fw-semibold fs-5 lh-sm"> Gracias por su colaboración!</p>
+                
+            </div>
+
         </section>
 
-        <section class="col-12 col-md-6 p-2" >
-            <h2 data-aos="flip-left" class="text-center">Dónde nos encontramos?</h2>
-
-                
-                    <p> Nos encontamos en Av. Gaona 2009, Ramos Mejía, Buenos Aires </p>
-                    <p>Teléfono 011 15-4949-9584</p>
-                    <p>Turnos para peluquería 11-41760466</p>
+        <section class="col-12 col-lg-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2500">
+            <h2 class="text-center p-1" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">Dónde nos encontramos?</h2>
+                    <p class="fw-semibold fs-5 lh-sm"> Nos encontamos en Av. Gaona 2009, Ramos Mejía, Buenos Aires </p>
+                    <p class="fw-semibold fs-5 lh-sm">Teléfono 011 15-4949-9584</p>
+                    <p class="fw-semibold fs-5 lh-sm">Turnos para peluquería 11-41760466</p>
 
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7109908723874!2d-58.56102761999793!3d-34.63674308054672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7fc93780237%3A0x8b14204779a39736!2sAv.%20Gaona%202009%2C%20B1704END%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653665014357!5m2!1ses-419!2sar"
                         class="w-100 " style="border:4" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-
             <!--Seccion Horarios-->
-                    <h2 data-aos="flip-left" class="p-2 mt-3 text-center">NUESTROS HORARIOS</h2>
-                    <!-- TABLA DE HORARIOS  -->
+            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="p-1 mt-3 text-center">Nuestros horarios</h2>
+            
+            <!-- TABLA DE HORARIOS  -->
     
-                    <table class=" table text-center"> 
+                    <table class=" table text-center fw-semibold fs-5"> 
                         <h4 class="text-center">ATENCIÓN CLÍNICA</h4>
                         <thead>
                             <tr>
@@ -189,19 +195,13 @@
     
                     </table>
 
-                <p class="p-2 m-0"> Los horarios son estimativos, dada la aplicación de protocolos sanitarios o consultas que requieran
+                <p class="p-2 m-0 fw-semibold fs-5"> Los horarios son estimativos, dada la aplicación de protocolos sanitarios o consultas que requieran
                     mayor tiempo de atención. A su vez, priorizamos las urgencias que pudieran surgir.</p>
 
-                <p class="p-2 m-0"> Esperamos sepan entender que dedicamos el tiempo necesario a cada paciente y todos serán atendidos
+                <p class="p-2 m-0 fw-semibold fs-5"> Esperamos sepan entender que dedicamos el tiempo necesario a cada paciente y todos serán atendidos
                     con el amor y dedicación que nos caracteriza.</p>
                 </section>
-        <div class="col-12  p-2">
-                <p class="ps-2"> Para cuidarnos entre tod@s, te recordamos que: </p>
-                <p class="ps-2"></p>❌ No está permitido el ingreso de personas sin elementos de protección de nariz, boca y mentón.<br></p>
-                <p class="ps-2"></p>✔️ Podrá asistir únicamente una persona por mascota, sin excepción!<br></p>
-                <p class="ps-2"> Gracias por su colaboración!</p>
-                
-            </div>
+        
         </section>
 
     </div>

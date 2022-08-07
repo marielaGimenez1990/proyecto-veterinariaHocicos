@@ -499,6 +499,10 @@ h3 {
   max-height: 300px;
 }
 
+#chapitas a:hover {
+  transform: scale(1.2, 1.2);
+}
+
 #seccionPrincipalServicios > h3 {
   color: rgb(66, 64, 64);
   text-decoration: dashed;
