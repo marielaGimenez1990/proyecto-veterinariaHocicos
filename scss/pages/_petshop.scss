@@ -8,11 +8,10 @@
 }
 
 #mainPet{
-    background-image: url("../img/fondo Huellas beige1.jpg");
+    background-image: url("../img/fondo Huellas beige1.jpeg");
     z-index: -10;
     @extend .contenedor;
 }
-
 
 .petshopPagos{
     border-radius: 1rem;
@@ -22,6 +21,9 @@
 
 .petshopDescripcion{
     font-weight: 600;
+    &>p{
+        background-color: white;
+    }
 }
 
 /*--Mixin Flex--*/
@@ -36,6 +38,9 @@
 #chapitas .chapitasEncargo {
 
     @include centrado-flex;
+    &>p{
+        background-color: white;
+    }
 }
 
 #chapitas img{

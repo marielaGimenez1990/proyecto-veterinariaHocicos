@@ -97,7 +97,6 @@ footer {
   background-color: rgb(56, 56, 54);
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1rem;
   padding-left: 0.5rem;
   background-image: linear-gradient(rgb(37, 37, 37), rgb(87, 87, 86));
 }
@@ -113,7 +112,7 @@ footer {
   right: 3vw;
 }
 #cajaFooter p {
-  line-height: 0.7rem;
+  line-height: 1.2rem;
 }
 #cajaFooter ul {
   line-height: 1.5rem;
@@ -128,6 +127,7 @@ footer {
 .logoInstagram, .logoFacebook {
   background-color: #f0ddfc;
   border-radius: 1rem;
+  margin-bottom: 4px;
 }
 .logoInstagram:hover, .logoFacebook:hover {
   transform: scale(1.5, 1.5);
@@ -179,10 +179,6 @@ footer {
   border-radius: 0.2rem;
   transform: scale(1.2, 1.2);
   display: inline-block;
-}
-
-#cajaFooter p {
-  line-height: 0.7rem;
 }
 
 .parrafoWhatsapp a {
@@ -469,7 +465,7 @@ h3 {
 }
 
 #mainPet {
-  background-image: url("../img/fondo Huellas beige1.jpg");
+  background-image: url("../img/fondo Huellas beige1.jpeg");
   z-index: -10;
 }
 
@@ -482,6 +478,9 @@ h3 {
 .petshopDescripcion {
   font-weight: 600;
 }
+.petshopDescripcion > p {
+  background-color: white;
+}
 
 /*--Mixin Flex--*/
 #chapitas .chapitasEncargo {
@@ -489,6 +488,9 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#chapitas .chapitasEncargo > p {
+  background-color: white;
 }
 
 #chapitas img {

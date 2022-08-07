@@ -2,7 +2,6 @@ footer {
     background-color: $color-footer;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1rem;
     padding-left: 0.5rem;
     background-image: linear-gradient(rgb(37, 37, 37) , rgb(87, 87, 86));
 }  
@@ -18,7 +17,7 @@ footer {
         right: 3vw;
     }
     p{
-    line-height: 0.7rem;
+    line-height: 1.2rem;
     }
     ul{
     line-height: 1.5rem;   
@@ -34,6 +33,7 @@ right: 3vw;
 .logoInstagram{
 background-color: map-get($redes, "instagram");
 border-radius: 1rem;
+margin-bottom: 4px;
 &:hover{
 transform: scale(1.5,1.5);
 }
@@ -94,10 +94,6 @@ background-color: map-get($redes, "facebook");
     }
 }
 
-#cajaFooter p{
-    line-height: 0.7rem;
-
-}  
 
 .parrafoWhatsapp a{
     color:black;
